@@ -50,36 +50,24 @@
         <div class="container-fluid p-0">
             <div class="row">
                 @foreach($restaurantItems as $item)
-                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-                    <a href="https://orders.gomeat.io/category-item?id={{$item->id}}&name=TWFpbg==">
-                        <div class="d-flex flex-column justify-content-between align-items-center p-2 border border-default"
-                            style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
-                            <div>
-                                <img src="https://dashboard.gomeat.io/storage/app/public/store/{{$restaurant->logo}}"
-                                    class="img-fluid restaurant-image"
-                                    style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
+                        <a href="https://orders.gomeat.io/category-item?id={{$item->id}}&name=TWFpbg==">
+                            <div class="d-flex flex-column justify-content-between align-items-center p-2"
+                                style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
+                                <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                    <img src="https://dashboard.gomeat.io/storage/app/public/product/{{$item->image}}"
+                                        class="img-fluid restaurant-image"
+                                        style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
+                                </div>
+                                <div class="mt-auto text-start border-top border-default pt-2" style="width: 100%;">
+                                    <p style="font-size: 15px; font-weight: bold; margin-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">{{$item->name}}</p>
+                                    <p style="font-size: 12px; color: #555; margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">
+                                       Rs.{{$item->price}}
+                                    </p>
+                                </div>
                             </div>
-                            <div class="mt-auto border-top border-default">
-                                <p>{{$item->name}}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-                    <a href="{{route('restaurant.details', [$restaurant->pretty_name])}}">
-                        <div class="d-flex flex-column justify-content-between align-items-center p-2 border border-default"
-                            style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
-                            <div>
-                                <img src="https://dashboard.gomeat.io/storage/app/public/store/{{$restaurant->logo}}"
-                                    class="img-fluid restaurant-image"
-                                    style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
-                            </div>
-                            <div class="mt-auto border-top border-default">
-                                <p>{{$restaurant->name}}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
                 @endforeach
             </div>
             <!-- Pagination Links -->
