@@ -45,13 +45,13 @@
 <section class="wrapper px-0" style="background-size: 100% 100%;">
     <div class="container p-0">
         <p>
-            <a href="{{route('home')}}">Home </a> > {{$pretty_name}} > Products
+            <a href="{{route('home')}}">Home </a> > <a href="{{route('restaurants')}}">Restaurant</a> > {{$pretty_name}} > Menu
         </p>
         <div class="container-fluid p-0">
             <div class="row">
                 @foreach($restaurantItems as $item)
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-                        <a href="https://orders.gomeat.io/category-item?id={{$item->id}}&name=TWFpbg==">
+                        <a href="https://orders.gomeat.io/store?id={{$restaurant->id}}&page=store">
                             <div class="d-flex flex-column justify-content-between align-items-center p-2"
                                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                                 <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
