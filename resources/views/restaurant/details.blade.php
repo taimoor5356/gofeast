@@ -60,8 +60,8 @@
                                         style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
                                 </div>
                                 <div class="mt-auto text-start border-top border-default pt-2" style="width: 100%;">
-                                    <p style="font-size: 15px; font-weight: bold; margin-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">{{$item->name}}</p>
-                                    <p style="font-size: 12px; color: #555; margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">
+                                    <p style="font-size: 15px; font-weight: bold; margin-bottom: 0; padding-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">{{$item->name}}</p>
+                                    <p style="font-size: 12px; color: #555; padding-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">
                                        Rs.{{$item->price}}
                                     </p>
                                 </div>
