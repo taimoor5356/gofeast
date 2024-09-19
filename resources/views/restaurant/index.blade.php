@@ -54,22 +54,22 @@
         <div class="container-fluid p-0">
             <div class="row">
             @foreach($restaurants as $restaurant)
-    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-        <a href="{{route('restaurant.details', [$restaurant->pretty_name])}}">
-            <div class="d-flex flex-column justify-content-between align-items-center p-2 border border-default"
-                style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
-                <div>
-                    <img src="https://dashboard.gomeat.io/storage/app/public/store/{{$restaurant->logo}}"
-                        class="img-fluid restaurant-image"
-                        style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
+                    <a href="{{route('restaurant.details', [$restaurant->pretty_name])}}">
+                        <div class="d-flex flex-column justify-content-between align-items-center p-2 border border-default"
+                            style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
+                            <div>
+                                <img src="https://dashboard.gomeat.io/storage/app/public/store/{{$restaurant->logo}}"
+                                    class="img-fluid restaurant-image"
+                                    style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
+                            </div>
+                            <div class="mt-auto border-top border-default">
+                                <p>{{$restaurant->name}}</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="mt-auto border-top border-default">
-                    <p>{{$restaurant->name}}</p>
-                </div>
-            </div>
-        </a>
-    </div>
-@endforeach
+            @endforeach
             </div>
             <!-- Pagination Links -->
             <div class="d-flex justify-content-center mt-4">
