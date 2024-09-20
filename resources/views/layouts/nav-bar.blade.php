@@ -22,20 +22,20 @@
                     <a class="nav-link <?php echo ($current_page == '/' || $current_page == 'pak' || $current_page == '') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'pickup') ? 'active border-bottom border-danger' : ''; ?>" href="./pickup">Pickup</a>
+                    <a class="nav-link <?php echo ($current_page == 'pickup') ? 'active border-bottom border-danger' : ''; ?>" href="#">Pickup</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'delivery') ? 'active border-bottom border-danger' : ''; ?>" href="./delivery">Delivery</a>
+                    <a class="nav-link <?php echo ($current_page == 'delivery') ? 'active border-bottom border-danger' : ''; ?>" href="#">Delivery</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'blog' || $current_page == 'article') ? 'active border-bottom border-danger' : ''; ?>" href="./blog">Blog</a>
+                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'blog' || $current_page == 'article') ? 'active border-bottom border-danger' : ''; ?>" href="#">Blog</a>
                     <ul class="dropdown-menu bg-default">
                         <li class="nav-item">
-                            <a class="dropdown-item <?php echo ($current_page == 'blog') ? 'active' : ''; ?>" href="./blog">Blog</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'blog') ? 'active' : ''; ?>" href="{{route('blog')}}">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item <?php echo ($current_page == 'article') ? 'active' : ''; ?>" href="./article">Article</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'article') ? 'active' : ''; ?>" href="{{route('article')}}">Article</a>
                         </li>
                     </ul>
                 </li>
@@ -44,26 +44,26 @@
                     <a class="nav-link dropdown-toggle <?php echo ($current_page == 'go-partner' || $current_page == 'go-driver') ? 'active border-bottom border-danger' : ''; ?>" href="#">Join Us</a>
                     <ul class="dropdown-menu bg-default">
                         <li class="nav-item">
-                            <a class="dropdown-item <?php echo ($current_page == 'go-partner') ? 'active' : ''; ?>" href="./go-partner">GoPartner</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'go-partner') ? 'active' : ''; ?>" href="{{route('gopartner')}}">GoPartner</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item <?php echo ($current_page == 'go-driver') ? 'active' : ''; ?>" href="./go-driver">GoDriver</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'go-driver') ? 'active' : ''; ?>" href="{{route('godriver')}}">GoDriver</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link <?php echo ($current_page == 'contact-us' || $current_page == 'faqs') ? 'active border-bottom border-danger' : ''; ?>" href="#!">Help</a>
+                    <a class="nav-link <?php echo ($current_page == 'contact-us' || $current_page == 'faqs') ? 'active border-bottom border-danger' : ''; ?>" href="#">Help</a>
                     <ul class="dropdown-menu">
                         <li class="nav-item dropdown">
-                            <a class="dropdown-item <?php echo ($current_page == 'faqs') ? 'active' : ''; ?>" href="./faqs">FAQs</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'faqs') ? 'active' : ''; ?>" href="{{route('faqs')}}">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item <?php echo ($current_page == 'contact-us') ? 'active' : ''; ?>" href="./contact-us">Contact Us</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'contact-us') ? 'active' : ''; ?>" href="{{route('contactus')}}">Contact Us</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'about-us') ? 'active border-bottom border-danger' : ''; ?>" href="./about-us">About Us</a>
+                    <a class="nav-link <?php echo ($current_page == 'about-us') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('aboutus')}}">About Us</a>
                 </li>
             </ul>
         </div>
