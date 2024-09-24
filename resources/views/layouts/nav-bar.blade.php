@@ -35,7 +35,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'restaurants') ? 'active border-bottom border-danger' : ''; ?>" href="#">PickUp/Delivery</a>
+                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'pickup' || $current_page == 'delivery') ? 'active border-bottom border-danger' : ''; ?>" href="#">PickUp/Delivery</a>
                     <ul class="dropdown-menu bg-default">
                         <li class="nav-item">
                             <a class="dropdown-item <?php echo ($current_page == 'pickup') ? 'active border-bottom border-danger' : ''; ?>" href="#">PickUp</a>
