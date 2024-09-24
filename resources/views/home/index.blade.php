@@ -120,7 +120,7 @@
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
-                        <a href="go-driver">
+                        <a href="{{route('godriver')}}">
                             <img src="{{asset('assets/img/photos/banners/2.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
@@ -130,12 +130,12 @@
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
-                        <a href="https://orders.gofeast.pk/category-item?id=1914&name=RGVhbHM=">
+                        <a href="{{route('restaurants')}}">
                             <img src="{{asset('assets/img/photos/banners/4.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
-                        <a href="go-partner">
+                        <a href="{{route('gopartner')}}">
                             <img src="{{asset('assets/img/photos/banners/5.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
@@ -242,7 +242,7 @@
             <h3 class="display-4 mb-5 text-primary" style="font-size: 55px;">Order from GoFeast!</h3>
             <div class="col-lg-6 text-center" data-cues="bounceIn" data-duration="2000">
 
-                <img src="{{asset('assets/img/photos/gofeastfeatures1.png')}}" width="90%" height="80%" alt="" />
+                <img src="{{asset('assets/img/photos/Icons Business.png')}}" width="90%" height="80%" alt="" />
 
             </div>
 

@@ -17,17 +17,34 @@
                 // Get the current file name
                 $current_page = basename($_SERVER['REQUEST_URI']);
                 ?>
-
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($current_page == '/' || $current_page == 'pak' || $current_page == '') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('home')}}">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'pickup') ? 'active border-bottom border-danger' : ''; ?>" href="#">Pickup</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'restaurants') ? 'active border-bottom border-danger' : ''; ?>" href="#">Order</a>
+                    <ul class="dropdown-menu bg-default">
+                        <li class="nav-item">
+                            <a class="dropdown-item <?php echo ($current_page == 'restaurants') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('restaurants')}}">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item <?php echo ($current_page == 'restaurants') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('restaurants')}}">Top Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item <?php echo ($current_page == 'restaurants') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('restaurants')}}">Home Chef</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'delivery') ? 'active border-bottom border-danger' : ''; ?>" href="#">Delivery</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'restaurants') ? 'active border-bottom border-danger' : ''; ?>" href="#">PickUp/Delivery</a>
+                    <ul class="dropdown-menu bg-default">
+                        <li class="nav-item">
+                            <a class="dropdown-item <?php echo ($current_page == 'pickup') ? 'active border-bottom border-danger' : ''; ?>" href="#">PickUp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item <?php echo ($current_page == 'delivery') ? 'active border-bottom border-danger' : ''; ?>" href="#">Delivery</a>
+                        </li>
+                    </ul>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle <?php echo ($current_page == 'blog' || $current_page == 'article') ? 'active border-bottom border-danger' : ''; ?>" href="#">Blog</a>
                     <ul class="dropdown-menu bg-default">
@@ -39,7 +56,6 @@
                         </li>
                     </ul>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle <?php echo ($current_page == 'go-partner' || $current_page == 'go-driver') ? 'active border-bottom border-danger' : ''; ?>" href="#">Join Us</a>
                     <ul class="dropdown-menu bg-default">
