@@ -250,7 +250,7 @@
                 </figure>
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <span><a href="https://orders.gomeat.io" target="_blank" class="btn btn-lg btn-green rounded fs-28"> Order Now!</a></span>
+                <span><a href="https://orders.gofeast.pk" target="_blank" class="btn btn-lg btn-green rounded fs-28"> Order Now!</a></span>
             </div>
         </div>
     </div>

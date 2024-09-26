@@ -51,11 +51,11 @@
             <div class="row">
                 @foreach($restaurantItems as $item)
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-                        <a href="https://orders.gomeat.io/store?id={{$restaurant->id}}&page=store">
+                        <a href="https://orders.gofeast.pk/store?id={{$restaurant->id}}&page=store">
                             <div class="d-flex flex-column justify-content-between align-items-center p-2"
                                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                                 <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                                    <img src="https://dashboard.gomeat.io/storage/app/public/product/{{$item->image}}"
+                                    <img src="https://dashboard.gofeast.pk/storage/app/public/product/{{$item->image}}"
                                         class="img-fluid restaurant-image"
                                         style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
                                 </div>
