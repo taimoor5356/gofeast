@@ -238,50 +238,22 @@
 <section class="wrapper bg-light px-0" style="margin-top: 10px;">
     <div class="container py-10 px-0 py-md-10">
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
-
-            <h3 class="display-4 mb-5 text-primary" style="font-size: 55px;">Order from GoFeast!</h3>
-            <div class="col-lg-6 text-center" data-cues="bounceIn" data-duration="2000">
-
-                <img src="{{asset('assets/img/photos/Icons Business.png')}}" width="90%" height="80%" alt="" />
-
+            <h3 class="display-4 mb-7 mt-lg-10 text-primary">Order from GoMeat!</h3>
+            <div class="col-lg-6 text-center">
+                <figure>
+                    <img src="{{asset('assets/img/photos/gomeatfeatures2.png')}}" width="90%" height="80%" alt="" loading="lazy">
+                </figure>
             </div>
-
-            <div class="col-lg-6">
-
-                <div class="row gy-6 gx-xxl-8 process-wrapper">
-                    <div class="col-md-4"> <img src="{{asset('assets/img/icons/lineal/cloud-computing.svg')}}"
-                            class="svg-inject icon-svg icon-svg-sm text-green mb-3" alt="" />
-                        <h4 class="mb-1">Cut the line </h4>
-                        <p class="mb-0">Order online and save up on time and effort
-                        </p>
-                    </div>
-
-                    <div class="col-md-4"> <img src="{{asset('assets/img/icons/lineal/smartphone-2.svg')}}"
-                            class="svg-inject icon-svg icon-svg-sm text-red mb-3" alt="" />
-                        <h4 class="mb-1">Same-day delivery
-                        </h4>
-                        <p class="mb-0">Get fresh meat and food delivered to your doorstep
-                        </p>
-                    </div>
-
-                    <div class="col-md-4"> <img src="{{asset('assets/img/icons/lineal/rocket.svg')}}"
-                            class="svg-inject icon-svg icon-svg-sm text-aqua mb-3" alt="" />
-                        <h4 class="mb-1">Cheapest Rates
-                        </h4>
-                        <p class="mb-0">Avail discounts, earn loyalty points and get referral rewards
-                        </p>
-                    </div>
-
-                </div>
-                <div class="d-flex justify-content-start mt-5" data-cues="slideInDown" data-duration="2000">
-                    <span><a class="btn btn-lg btn-green rounded me-2">Order Now!</a></span>
-                </div>
+            <div class="col-lg-6 text-center">
+                <figure>
+                    <img src="{{asset('assets/img/photos/gomeatfeatures1.png')}}" width="90%" height="80%" alt="" loading="lazy">
+                </figure>
             </div>
-
+            <div class="d-flex justify-content-center mt-5">
+                <span><a href="https://orders.gomeat.io" target="_blank" class="btn btn-lg btn-green rounded fs-28"> Order Now!</a></span>
+            </div>
         </div>
-
     </div>
-
 </section>
 <!-- /section -->
 
