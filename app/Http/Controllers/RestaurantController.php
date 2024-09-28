@@ -13,14 +13,14 @@ class RestaurantController extends Controller
     public function index($name = null, $location = null)
     {
         //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('active', 1)->paginate(18);
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('active', 1)->where('pretty_name', '!=', '')->paginate(18);
         return view('restaurant.index', $data);
     }
     
     public function restaurantDetails($prettyName)
     {
         //
-        $restaurant = DB::table('stores')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->first();
+        $restaurant = DB::table('stores')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->where('pretty_name', '!=', '')->first();
         if (isset($restaurant)) {
             $data['restaurant'] = $restaurant;
             $data['restaurantItems'] = DB::table('items')->where('store_id', $restaurant->id)->paginate(18);
