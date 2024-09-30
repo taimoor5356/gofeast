@@ -260,7 +260,7 @@
 <section class="wrapper bg-light px-0" style="margin-top: 10px;">
     <div class="container py-10 px-0 py-md-10">
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
-            <h3 class="display-4 mb-7 mt-lg-10 text-primary">Order from GoMeat!</h3>
+            <h3 class="display-4 mb-7 mt-lg-10 text-primary">Order from GoFeast!</h3>
             <div class="col-lg-6 text-center">
                 <figure>
                     <img src="{{asset('assets/img/photos/gomeatfeatures2.png')}}" width="90%" height="80%" alt="" loading="lazy">
