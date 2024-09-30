@@ -43,8 +43,8 @@
                     <ul class="list-unstyled text-reset mb-0">
                         <!-- <li><a href="./blog">Blogs</a></li> -->
                         <li><a href="{{url('contact-us')}}">Customer Support</a></li>
-                        <li><a href="https://www.facebook.com/gomeatpakistan">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/gomeat.pak?igsh=MTBsdnc2bWtpdnZzdw==">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/gofeast.pk">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/gofeast.pk">Instagram</a></li>
                         <li><a href="mailto:cs@gofeast.pk" class="text-white">cs@gofeast.pk</a></li>
                         <!-- <li><a href="mailto:cs@gofeast.pk" class="text-white">cs@gofeast.pk</a></li>
                             <li><a href="tel:19085740454" class="text-white">+92 337-7777-761</a></li> -->

@@ -28,6 +28,34 @@ class RestaurantController extends Controller
             return view('restaurant.details', $data);
         }
     }
+    
+    public function delivery()
+    {
+        //
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('self_delivery_system', 1)->where('active', 1)->paginate(18);
+        return view('restaurant.index', $data);
+    }
+    
+    public function pickup()
+    {
+        //
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('self_delivery_system', 0)->where('active', 1)->paginate(18);
+        return view('restaurant.index', $data);
+    }
+    
+    public function homeChef()
+    {
+        //
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('home_chef', 1)->where('active', 1)->paginate(18);
+        return view('restaurant.index', $data);
+    }
+    
+    public function featured()
+    {
+        //
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('featured', 1)->where('active', 1)->paginate(18);
+        return view('restaurant.index', $data);
+    }
 
     /**
      * Show the form for creating a new resource.

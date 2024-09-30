@@ -37,6 +37,9 @@ Route::get('/vendor-terms', [HomeController::class, 'vendorterms'])->name('vendo
 
 Route::get('restaurants', [RestaurantController::class, 'index'])->name('restaurants');
 Route::get('restaurants/{pretty_name?}', [RestaurantController::class, 'restaurantDetails'])->name('restaurant.details');
-Route::get('restaurants/{pretty_name}/{items}', [RestaurantController::class, 'restaurantItems'])->name('restaurant.items');
+Route::get('delivery', [RestaurantController::class, 'delivery'])->name('restaurant.delivery');
+Route::get('pickup', [RestaurantController::class, 'pickup'])->name('restaurant.pickup');
+Route::get('home-chef', [RestaurantController::class, 'homeChef'])->name('restaurant.homechef');
+Route::get('featured', [RestaurantController::class, 'featured'])->name('restaurant.featured');
 
 Route::get('products/{name?}/{location?}', [ProductController::class, 'index'])->name('products');
