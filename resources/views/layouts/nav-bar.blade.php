@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg center-nav transparent navbar-light mb-2 px-0">
-    <div class="container flex-lg-row flex-nowrap align-items-center border-bottom border-default px-0">
+    <div class="container flex-lg-row flex-nowrap align-items-center border-bottom px-0">
         <div class="navbar-brand w-100">
             <a href="./">
                 <img src="{{asset('assets/img/GoFeast Red 2.png')}}" height="70px" width="150px" srcset="{{asset('assets/img/GoFeast Red 2.png')}} 2x" alt="">
