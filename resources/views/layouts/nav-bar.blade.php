@@ -24,6 +24,9 @@
                     <a class="nav-link dropdown-toggle <?php echo ($current_page == 'restaurants' || $current_page == 'delivery' || $current_page == 'pickup') ? 'active' : ''; ?>" href="#">Restaurants</a>
                     <ul class="dropdown-menu bg-default">
                         <li class="nav-item">
+                            <a class="dropdown-item <?php echo ($current_page == 'restaurants') ? 'active' : ''; ?>" href="{{route('restaurants')}}">All Restaurants</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="dropdown-item <?php echo ($current_page == 'delivery') ? 'active' : ''; ?>" href="{{route('restaurant.delivery')}}">Delivery</a>
                         </li>
                         <li class="nav-item">
