@@ -79,7 +79,7 @@
         .scrolling-text p {
             display: inline-block;
             padding-left: 100%;
-            animation: scrolling 25s linear infinite;
+            animation: scrolling 50s linear infinite;
         }
 
         @keyframes scrolling {
