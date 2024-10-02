@@ -104,7 +104,7 @@
 @section('content')
 
 <section class="wrapper px-0" style="background-size: 100% 100%;">
-    <div class="container p-0 pb-8 pb-md-8 pt-8 pt-md-8">
+    <div class="container p-0 pb-8 pb-md-8">
         <div class="container-fluid px-0">
             <div class="row d-flex justify-content-center text-center">
                 <div class="carousel main-carousel-banner owl-carousel clients mb-0"
@@ -197,16 +197,16 @@
             <h3 class="display-4 text-primary" style="font-size: 55px;">Top Brands!</h3>
             <section class="wrapper bg-light">
                 <div class="container py-md-10">
-                    <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="6500" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "5"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.JPEG')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
+                    <div class="carousel owl-carousel clients mb-0" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "5"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpg')}}" alt="" loading="lazy"></div> <!-- Burger Lab -->
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="" loading="lazy"></div> <!-- Second Cup -->
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="" loading="lazy"></div> <!-- Gloria Jeans -->
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.JPEG')}}" alt="" loading="lazy"></div> <!-- Silver Burn -->
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="" loading="lazy"></div> <!-- Bunty Sajji -->
+                        <!-- <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpg')}}" alt="" loading="lazy"></div>
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="" loading="lazy"></div> -->
                     </div>
                 </div>
             </section>
@@ -241,15 +241,10 @@
             <section class="wrapper bg-light">
                 <div class="container py-md-10">
                     <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="4000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "5"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.JPEG')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpg')}}" alt="" loading="lazy"></div>
                     </div>
                 </div>
             </section>
@@ -257,10 +252,10 @@
     </div>
 </section>
 
-<section class="wrapper bg-light px-0" style="margin-top: 10px;">
-    <div class="container py-10 px-0 py-md-10">
+<section class="wrapper px-0" style="margin-top: 10px;">
+    <h3 class="mt-lg-10 text-center py-5" style="font-size: 55px; color: white; background-color: #bd3c4a; width: 100%">Order from GoFeast!</h3>
+    <div class="container px-0">
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
-            <h3 class="display-4 mb-7 mt-lg-10 text-primary">Order from GoFeast!</h3>
             <div class="col-lg-6 text-center">
                 <figure>
                     <img src="{{asset('assets/img/photos/gomeatfeatures2.png')}}" width="90%" height="80%" alt="" loading="lazy">
@@ -271,8 +266,8 @@
                     <img src="{{asset('assets/img/photos/gomeatfeatures1.png')}}" width="90%" height="80%" alt="" loading="lazy">
                 </figure>
             </div>
-            <div class="d-flex justify-content-center mt-5">
-                <span><a href="https://orders.gofeast.pk" target="_blank" class="btn btn-lg btn-green rounded fs-28"> Order Now!</a></span>
+            <div class="d-flex justify-content-center py-10">
+                <span><a href="https://orders.gofeast.pk" target="_blank" class="btn btn-lg btn-primary rounded fs-28"> Order Now!</a></span>
             </div>
         </div>
     </div>

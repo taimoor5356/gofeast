@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg center-nav transparent navbar-light mb-2 px-0">
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light px-0">
     <div class="container flex-lg-row flex-nowrap align-items-center border-bottom px-0">
         <div class="navbar-brand w-100">
             <a href="./">
