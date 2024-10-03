@@ -50,7 +50,7 @@
                 <!--    style="top:50%; left: 50%; transform: translate(-50%,-50%); z-index:3;" data-glightbox>-->
                 <!--    <i class="icn-caret-right"></i>-->
                 <!--</a>-->
-                <figure class="rounded" style="justify-content: center; display: flex;"><img style="height:593px; width:300px" src="{{asset('assets/img/photos/App 1.png')}}" alt=""></figure>
+                <figure class="rounded" style="justify-content: center; display: flex;"><img style="height:593px; width:300px" src="{{asset('assets/img/photos/app.png')}}" alt=""></figure>
 
 
             </div>
