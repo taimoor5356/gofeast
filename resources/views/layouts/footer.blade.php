@@ -65,6 +65,8 @@
                         <li><a href="{{url('go-partner')}}">Become a GoPartner</a></li>
                         <li><a href="{{url('go-driver')}}">Become a GoDriver</a></li>
                         <!-- <li><a href="#">Privacy Policy</a></li> -->
+                        <li><a href="{{url('site-map.xml')}}">Site Map</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.widget -->
@@ -80,7 +82,7 @@
                         <li><a href="{{url('terms-and-conditions')}}">Terms & Conditions</a>
                         </li>
                         <li><a href="{{url('refund-policy')}}">Refund Policy</a>
-                        </li>
+                        </li>x
                     </ul>
                     <br>
                     <h4 class="widget-title text-white mb-2">Download App Now!</h4>

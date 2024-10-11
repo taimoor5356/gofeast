@@ -33,6 +33,9 @@ Route::get('/refund-policy', [HomeController::class, 'refundpolicy'])->name('ref
 Route::get('/terms-and-conditions', [HomeController::class, 'termsandconditions'])->name('termsandconditions');
 Route::get('/terms-of-use', [HomeController::class, 'termsofuse'])->name('termsofuse');
 Route::get('/vendor-terms', [HomeController::class, 'vendorterms'])->name('vendorterms');
+Route::get('/site-map.xml', function () {
+    return response()->view('home.sitemap')->header('Content-Type', 'text/xml');
+})->name('sitemap');
 
 
 Route::get('restaurants', [RestaurantController::class, 'index'])->name('restaurants');
