@@ -82,7 +82,7 @@
                         <li><a href="{{url('terms-and-conditions')}}">Terms & Conditions</a>
                         </li>
                         <li><a href="{{url('refund-policy')}}">Refund Policy</a>
-                        </li>x
+                        </li>
                     </ul>
                     <br>
                     <h4 class="widget-title text-white mb-2">Download App Now!</h4>
