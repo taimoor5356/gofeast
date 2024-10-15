@@ -17,7 +17,7 @@
     # Custom rewrite rule for images
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_URI} ^/(.+)\.(png|jpg|jpeg|gif)$
-    RewriteRule ^(.*)$ public/assets/img/photos/banners/$1 [L,QSA]
+    RewriteRule ^(.*)$ public/assets/img/$1 [L,QSA]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

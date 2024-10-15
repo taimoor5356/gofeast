@@ -2,13 +2,13 @@
     <div class="container flex-lg-row flex-nowrap align-items-center border-bottom px-0">
         <div class="navbar-brand w-100">
             <a href="./">
-                <img src="{{asset('assets/img/GoFeast Red 2.png')}}" height="70px" width="150px" srcset="{{asset('assets/img/GoFeast Red 2.png')}} 2x" alt="">
+                <img src="{{url('logo.png')}}" height="70px" width="150px" srcset="{{url('logo.png')}} 2x" alt="">
             </a>
         </div>
         <div class="navbar-collapse offcanvas-nav px-0 mx-0">
             <div class="offcanvas-header d-lg-none d-xl-none">
-                <a href="./"><img src="{{asset('assets/img/GoFeast Red 2.png')}}" height="70px" width="150px"
-                        srcset="{{asset('assets/img/GoFeast Red 2.png')}} 2x" alt=""></a>
+                <a href="./"><img src="{{url('logo.png')}}" height="70px" width="150px"
+                        srcset="{{url('logo.png')}} 2x" alt=""></a>
                 <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
                     aria-label="Close"></button>
             </div>
