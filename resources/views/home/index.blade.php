@@ -116,27 +116,27 @@
                     data-responsive='{"0":{"items": "1"}, "768":{"items": "1"}, "992":{"items": "1"}, "1200":{"items": "1"}, "1400":{"items": "1"}}'>
                     <div class="item mx-10 px-0">
                         <a href="https://orders.gofeast.pk/category-item?id=1666&name=TWFpbg==">
-                            <img src="{{asset('assets/img/photos/banners/1.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
+                            <img src="{{ url('banner-1.jpg') }}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
                         <a href="{{route('godriver')}}">
-                            <img src="{{asset('assets/img/photos/banners/2.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
+                            <img src="{{url('banner-2.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
                         <a href="https://orders.gofeast.pk/category-item?id=1863&name=SG90IFBpY2tz">
-                            <img src="{{asset('assets/img/photos/banners/3.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
+                            <img src="{{url('banner-3.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
                         <a href="{{route('restaurants')}}">
-                            <img src="{{asset('assets/img/photos/banners/4.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
+                            <img src="{{url('banner-4.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="item mx-10 px-0">
                         <a href="{{route('gopartner')}}">
-                            <img src="{{asset('assets/img/photos/banners/5.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
+                            <img src="{{url('banner-5.jpg')}}" class="img-fluid" style="border-radius: 15px;" alt="" loading="lazy">
                         </a>
                     </div>
                 </div>
