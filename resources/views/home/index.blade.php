@@ -171,15 +171,6 @@
                         <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (9).jpeg')}}" alt="" loading="lazy"></a></div>
                         <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (10).jpeg')}}" alt="" loading="lazy"></a></div>
                         <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (11).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (12).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (13).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (14).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (15).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (16).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (17).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (18).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (19).jpeg')}}" alt="" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (20).jpeg')}}" alt="" loading="lazy"></a></div>
                     </div>
                     <!-- /.owl-carousel -->
                 </div>
