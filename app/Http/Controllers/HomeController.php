@@ -79,6 +79,11 @@ class HomeController extends Controller
         //
         return view('home.sitemap');
     }
+    public function vendorterms()
+    {
+        //
+        return view('home.vendorterms');
+    }
 
     /**
      * Show the form for creating a new resource.

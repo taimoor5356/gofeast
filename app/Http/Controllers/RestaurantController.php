@@ -32,14 +32,14 @@ class RestaurantController extends Controller
     public function delivery()
     {
         //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('self_delivery_system', 1)->where('active', 1)->paginate(18);
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('delivery', 1)->where('active', 1)->paginate(18);
         return view('restaurant.index', $data);
     }
     
     public function pickup()
     {
-        //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('self_delivery_system', 0)->where('active', 1)->paginate(18);
+        // take away ON
+        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('take_away', 1)->where('active', 1)->paginate(18);
         return view('restaurant.index', $data);
     }
     
