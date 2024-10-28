@@ -50,7 +50,7 @@
                     <div class="col-md-5 offset-md-1 align-self-end">
                         <div class="card bg-pale-yellow">
                             <div class="card-body">
-                                <img src="{{asset('assets/img/photos/increase-rev.png')}}" width="150" height="auto"
+                                <img src="{{asset('assets/img/photos/gofeast_images/increase-rev.png')}}" width="150" height="auto"
                                     class="mb-3" alt="" />
                                 <!-- <h4>Increase Revenue</h4> -->
                                 <p class="mb-0">Access to GoFeast customer base</p>
@@ -63,7 +63,7 @@
                     <div class="col-md-6 align-self-end">
                         <div class="card bg-pale-red">
                             <div class="card-body">
-                                <img src="{{asset('assets/img/photos/no-setup-cost.png')}}" width="150" height="auto"
+                                <img src="{{asset('assets/img/photos/gofeast_images/no-setup-cost.png')}}" width="150" height="auto"
                                     class="mb-3" alt="" />
                                 <!-- <h4>No Setup Cost</h4> -->
                                 <p class="mb-0">There is NO setup cost to bring your store on-board GoFeast
@@ -77,7 +77,7 @@
                     <div class="col-md-5">
                         <div class="card bg-pale-leaf">
                             <div class="card-body">
-                                <img src="{{asset('assets/img/photos/marketing.png')}}" width="150" height="auto"
+                                <img src="{{asset('assets/img/photos/gofeast_images/marketing.png')}}" width="150" height="auto"
                                     class="mb-3" alt="" />
                                 <!-- <h4>Marketing & Promotions</h4> -->
                                 <p class="mb-0">Be part of extensive Marketing and Promotions run by GoFeast to
@@ -91,7 +91,7 @@
                     <div class="col-md-6 align-self-start">
                         <div class="card bg-pale-primary">
                             <div class="card-body">
-                                <img src="{{asset('assets/img/photos/home-delivery.png')}}" width="150" height="auto"
+                                <img src="{{asset('assets/img/photos/gofeast_images/home-delivery.png')}}" width="150" height="auto"
                                     class="mb-3" alt="" />
                                 <!-- <h4>Home Delivery Setup</h4> -->
                                 <p class="mb-0">As GoFeast Partner, all orders placed on your store via GoFeast
@@ -141,12 +141,12 @@
                     <div class="col-md-6">
                         <div class="row gx-md-5 gy-5">
                             <div class="col-md-10 offset-md-2">
-                                <figure class="rounded"><img src="{{asset('assets/img/photos/order-placed.png')}}" alt="">
+                                <figure class="rounded"><img src="{{asset('assets/img/photos/gofeast_images/order-placed.png')}}" alt="">
                                 </figure>
                             </div>
                             <!--/column -->
                             <div class="col-md-12">
-                                <figure class="rounded"><img src="{{asset('assets/img/photos/order-prepration.png')}}"
+                                <figure class="rounded"><img src="{{asset('assets/img/photos/gofeast_images/order-prepration.png')}}"
                                         alt=""></figure>
                             </div>
                             <!--/column -->
@@ -155,7 +155,7 @@
                     </div>
                     <!--/column -->
                     <div class="col-md-6">
-                        <figure class="rounded"><img src="{{asset('assets/img/photos/order-delivered.png')}}" alt="">
+                        <figure class="rounded"><img src="{{asset('assets/img/photos/gofeast_images/order-delivered.png')}}" alt="">
                         </figure>
                     </div>
                     <!--/column -->
@@ -260,7 +260,7 @@
         <div class="row gx-lg-8 gx-xl-12 gy-10 mt-2  align-items-center" data-cues="slideInDown"
             data-group="process">
             <div class="col-lg-7">
-                <figure><img class="w-auto" src="{{asset('assets/img/photos/store-contact.png')}}" alt="" /></figure>
+                <figure><img class="w-auto" src="{{asset('assets/img/photos/gofeast_images/store-contact.png')}}" alt="" /></figure>
             </div>
             <div class="col-lg-5 col-xl-4 ">
                 <h2 class="fs-16 text-uppercase text-line text-primary mb-3">Get In Touch</h2>

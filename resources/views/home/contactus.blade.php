@@ -16,19 +16,19 @@
             <div class="col-lg-7 position-relative">
                 <div class="row gx-md-5 gy-5">
                     <div class="col-md-6">
-                        <figure class="rounded"><img src="{{asset('assets/img/photos/order-delivered.png')}}" alt="">
+                        <figure class="rounded"><img src="{{asset('assets/img/photos/gofeast_images/order-delivered.png')}}" alt="">
                         </figure>
                     </div>
                     <!--/column -->
                     <div class="col-md-6">
                         <div class="row gx-md-5 gy-5">
                             <div class="col-md-12 order-md-2">
-                                <figure class="rounded"><img src="{{asset('assets/img/photos/store-contact.png')}}" alt="">
+                                <figure class="rounded"><img src="{{asset('assets/img/photos/gofeast_images/store-contact.png')}}" alt="">
                                 </figure>
                             </div>
                             <!--/column -->
                             <div class="col-md-10">
-                                <!-- <figure class="rounded"><img src="{{asset('assets/img/photos/store.png')}}" alt="">
+                                <!-- <figure class="rounded"><img src="{{asset('assets/img/photos/gofeast_images/store.png')}}" alt="">
                                         </figure> -->
                                 <div class="card bg-pale-primary text-center counter-wrapper">
                                     <div class="card-body py-11">
