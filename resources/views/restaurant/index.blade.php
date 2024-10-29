@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('meta_tags')
-
+@if(!empty($pickup_meta_tags))
+{!! $pickup_meta_tags !!}
+@elseif (!empty($delivery_meta_tags))
+{!! $delivery_meta_tags !!}
+@endif
 @endsection
 @section('styles')
 <style>
