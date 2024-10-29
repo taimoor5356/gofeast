@@ -1,6 +1,54 @@
 @extends('layouts.app')
 @section('meta_tags')
 
+<!-- Meta Title -->
+
+<title>Contact Us | GoFeast.pk - Get in Touch for Online Food & Grocery Delivery in Lahore</title>
+
+
+
+<!-- Meta Description -->
+
+<meta name="description" content="Have questions or need assistance? Contact GoFeast.pk for inquiries about our Online Food & Grocery delivery services in Bahria Town, Lahore. We're here to help!">
+
+
+
+<!-- Meta Keywords -->
+
+<meta name="keywords" content="GoFeast.pk contact, customer support, Online Food & Grocery inquiries, grocery delivery questions, contact GoFeast.pk, Bahria Town Lahore, GoFeast.pk help, get in touch with GoFeast.pk, Lahore grocery delivery support">
+
+
+
+<!-- Meta Robots -->
+
+<meta name="robots" content="index, follow">
+
+
+
+<!-- Open Graph Tags -->
+
+<meta property="og:title" content="Contact Us | GoFeast.pk - Get in Touch for Online Food & Grocery Delivery in Lahore">
+
+<meta property="og:description" content="Have questions or need assistance? Contact GoFeast.pk for inquiries about our Online Food & Grocery delivery services in Bahria Town, Lahore. We're here to help!">
+
+<meta property="og:url" content="https://www.gofeast.pk/contact-us">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="https://www.gofeast.pk/assets/images/contact-us-banner.jpg">
+
+
+
+<!-- Twitter Card Tags -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Contact Us | GoFeast.pk - Get in Touch for Online Food & Grocery Delivery in Lahore">
+
+<meta name="twitter:description" content="Have questions or need assistance? Contact GoFeast.pk for inquiries about our Online Food & Grocery delivery services in Bahria Town, Lahore. We're here to help!">
+
+<meta name="twitter:image" content="https://www.gofeast.pk/assets/images/contact-us-banner.jpg">
+
 @endsection
 @section('content')
 <section class="wrapper bg-light ">
