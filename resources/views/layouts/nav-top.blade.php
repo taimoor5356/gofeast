@@ -1,5 +1,5 @@
-<div class="bg-primary text-white fw-bold fs-15 px-0">
-    <div class="container d-md-flex flex-md-row px-0">
+<div class="bg-primary text-white fw-bold fs-15">
+    <div class="container d-md-flex flex-md-row">
         <div class="d-flex flex-row align-items-center">
             <div class="icon text-white fs-22 mb-1 me-2"> <i class="uil uil-download-alt"></i></div>
             <address class="mb-0">Download App Now!</address>

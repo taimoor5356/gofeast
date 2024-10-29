@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg center-nav transparent navbar-light px-0">
-    <div class="container flex-lg-row flex-nowrap align-items-center border-bottom px-0">
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+    <div class="container flex-lg-row flex-nowrap align-items-center border-bottom">
         <div class="navbar-brand w-100">
             <a href="./">
                 <img src="{{url('logo.png')}}" height="70px" width="150px" srcset="{{url('logo.png')}} 2x" alt="">

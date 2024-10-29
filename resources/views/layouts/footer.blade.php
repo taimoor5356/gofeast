@@ -1,5 +1,5 @@
 <footer class="bg-dark text-inverse">
-    <div class="container pt-8 pb-17 pt-md-8 pb-md-17 px-0">
+    <div class="container pt-8 pb-17 pt-md-8 pb-md-17">
         <div class="row gy-6 gy-lg-0">
             <div class="col-md-4 col-lg-3">
                 <div class="widget">

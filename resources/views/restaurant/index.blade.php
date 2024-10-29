@@ -45,7 +45,7 @@
 @section('content')
 
 <section class="wrapper px-0" style="background-size: 100% 100%;">
-    <div class="container p-0">
+    <div class="container">
         <p>
             <a href="https://www.gofeast.pk">Home </a> > Restaurants
         </p>
@@ -83,33 +83,7 @@
             </div>
             <!-- Pagination Links -->
             <div class="d-flex justify-content-center mt-4">
-                @if ($restaurants->hasPages())
-                <nav>
-                    <ul class="pagination">
-                        {{-- Previous Page Link --}}
-                        @if ($restaurants->onFirstPage())
-                        <li class="page-item disabled" aria-disabled="true">
-                            <span class="page-link">&laquo;</span>
-                        </li>
-                        @else
-                        <li class="page-item">
-                            <a class="page-link" href="{{ $restaurants->previousPageUrl() }}" rel="prev">&laquo;</a>
-                        </li>
-                        @endif
-
-                        {{-- Next Page Link --}}
-                        @if ($restaurants->hasMorePages())
-                        <li class="page-item">
-                            <a class="page-link" href="{{ $restaurants->nextPageUrl() }}" rel="next">&raquo;</a>
-                        </li>
-                        @else
-                        <li class="page-item disabled" aria-disabled="true">
-                            <span class="page-link">&raquo;</span>
-                        </li>
-                        @endif
-                    </ul>
-                </nav>
-                @endif
+                {{ $restaurants->links('pagination::bootstrap-4') }}
             </div>
         </div>
     </div>
