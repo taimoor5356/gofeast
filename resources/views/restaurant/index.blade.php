@@ -64,7 +64,7 @@
                             <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
                                 <img src="https://dashboard.gomeat.io/storage/app/public/store/{{$restaurant->logo}}"
                                     class="img-fluid restaurant-image"
-                                    style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="">
+                                    style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="Restaurant Image">
                             </div>
                             <div class="mt-auto text-start border-top border-default pt-2" style="width: 100%;">
                                 <p style="font-size: 15px; font-weight: bold; margin-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">{{$restaurant->name}}</p>
