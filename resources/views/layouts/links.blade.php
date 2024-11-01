@@ -22,13 +22,11 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="halal meat delivery, meat delivery, food order online, halal meat online, food order delivery usa, grocery shopping store, meat delivery, same day delivery, halal meat store, ICO, Token, GOMT token, Crypto, Food Crypto Marketplace, Cryptocurrency, Hydra, Digital Currency, Ethereum, Blockchain">
 <meta name="author" content="GoFeast">
 <meta http-equiv="content-language" content="en">
 <meta name="publisher" content="GoFeast">
 <meta name="copyright" content="GoFeast">
 <meta name="audience" content="Everyone">
-<meta name="robots" content="index, follow">
 <link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}">
 <link rel="stylesheet" href="{{asset('assets/css/plugins.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
