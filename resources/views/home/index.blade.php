@@ -171,7 +171,7 @@
         <div class="row gx-md-8 gy-8 text-center ">
             <section class="wrapper bg-light px-0">
                 <div class="container px-0">
-                    <div class="carousel main-carousel-banner owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" data-rtl="false" data-responsive='{"0":{"items": "2"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "2"}, "1400":{"items": "3"}}'>
+                    <div class="carousel main-carousel-banner owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" data-rtl="false" data-responsive='{"0":{"items": "3"}, "768":{"items": "3"}, "992":{"items": "3"}, "1200":{"items": "3"}, "1400":{"items": "3"}}'>
                         <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (1).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
                         <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (2).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
                         <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (3).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
