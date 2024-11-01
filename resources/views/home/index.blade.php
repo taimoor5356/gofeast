@@ -172,17 +172,17 @@
             <section class="wrapper bg-light px-0">
                 <div class="container px-0">
                     <div class="carousel main-carousel-banner owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" data-rtl="false" data-responsive='{"0":{"items": "2"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "2"}, "1400":{"items": "3"}}'>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (1).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (2).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (3).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (4).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (5).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (6).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (7).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (8).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (9).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (10).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
-                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (11).jpeg')}}" alt="Promotional Product Image" loading="lazy"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (1).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (2).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (3).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (4).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (5).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (6).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (7).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (8).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (9).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (10).jpeg')}}" alt="Promotional Product Image"></a></div>
+                        <div class="item"><a href="https://orders.gofeast.pk/popular-items?page=reviewed"><img class="rounded border border-danger" src="{{asset('assets/img/photos/items/img (11).jpeg')}}" alt="Promotional Product Image"></a></div>
                     </div>
                     <!-- /.owl-carousel -->
                 </div>
@@ -203,33 +203,33 @@
                     <div class="carousel owl-carousel clients mb-0" data-responsive='{"0":{"items": "2"}, "768":{"items": "3"}, "992":{"items": "4"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2994&page=item" target="_blank">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpeg')}}" alt="Top Brand Product Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpeg')}}" alt="Top Brand Product Image">
                             </a>    
                         </div> <!-- Burger Lab -->
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2984&page=item" target="_blank">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="Top Brand Product Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="Top Brand Product Image">
                             </a>
                         </div> <!-- Second Cup -->
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2990&page=item" target="_blank">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="Top Brand Product Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="Top Brand Product Image">
                             </a>
                         </div> <!-- Gloria Jeans -->
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2982&page=item" target="_blank">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.jpeg')}}" alt="Top Brand Product Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.jpeg')}}" alt="Top Brand Product Image">
                             </a>
                         </div> <!-- Silver Burn -->
                         <div class="item px-5">
                             <a href="" target="_blank">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="Top Brand Product Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="Top Brand Product Image">
                             </a>
                         </div> <!-- Bunty Sajji -->
-                        <!-- <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="" loading="lazy"></div> -->
+                        <!-- <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt=""></div>
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt=""></div>
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt=""></div>
+                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt=""></div> -->
                     </div>
                 </div>
             </section>
@@ -266,22 +266,22 @@
                     <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="4000" data-responsive='{"0":{"items": "2"}, "768":{"items": "2"}, "992":{"items": "4"}, "1200":{"items": "4"}, "1400":{"items": "4"}}'>
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2972&page=item">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="Trusted by Brands Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="Trusted by Brands Image">
                             </a>
                         </div>
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2986&page=item">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="Trusted by Brands Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="Trusted by Brands Image">
                             </a>
                         </div>
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2975&page=item">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="Trusted by Brands Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="Trusted by Brands Image">
                             </a>
                         </div>
                         <div class="item px-5">
                             <a href="https://orders.gofeast.pk/store?id=2972&page=item">
-                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="Trusted by Brands Image" loading="lazy">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="Trusted by Brands Image">
                             </a>
                         </div>
                     </div>
@@ -297,12 +297,12 @@
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
             <div class="col-lg-6 text-center">
                 <figure>
-                    <img src="{{asset('assets/img/photos/gomeatfeatures2.png')}}" width="90%" height="80%" alt="Background Image 2" loading="lazy">
+                    <img src="{{asset('assets/img/photos/gomeatfeatures2.png')}}" width="90%" height="80%" alt="Background Image 2">
                 </figure>
             </div>
             <div class="col-lg-6 text-center">
                 <figure>
-                    <img src="{{asset('assets/img/photos/gomeatfeatures1.png')}}" width="90%" height="80%" alt="Background Image 1" loading="lazy">
+                    <img src="{{asset('assets/img/photos/gomeatfeatures1.png')}}" width="90%" height="80%" alt="Background Image 1">
                 </figure>
             </div>
             <div class="d-flex justify-content-center py-10">
