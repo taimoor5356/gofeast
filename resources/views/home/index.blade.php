@@ -125,7 +125,7 @@
                     data-dots="false"
                     data-autoplay="true"
                     data-autoplay-timeout="8000"
-                    data-responsive='{"0":{"items": "1"}, "768":{"items": "1"}, "992":{"items": "1"}, "1200":{"items": "1"}, "1400":{"items": "1"}}'>
+                    data-responsive='{"0":{"items": "1"}, "768":{"items": "1"}, "992":{"items": "2"}, "1200":{"items": "2"}, "1400":{"items": "2"}}'>
                     <div class="item mx-10 px-0">
                         <a href="https://orders.gofeast.pk/category-item?id=1666&name=TWFpbg==">
                             <img src="{{ url('banner-1.jpg') }}" class="img-fluid" style="border-radius: 15px;" alt="Banners" loading="lazy">
