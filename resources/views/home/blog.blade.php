@@ -40,7 +40,7 @@
                                                 target="_blank" class="link-dark">
                                                 GoFeast Annual Performance Report 2022 — Key Updates
                                             </a> -->
-                                            <a href="#"
+                                            <a href="{{asset('assets/pdf/AnnualPerformanceReport_20221.pdf')}}"
                                                 target="_blank" class="link-dark">
                                                 GoFeast Annual Performance Report 2022 — Key Updates
                                             </a>
@@ -52,7 +52,7 @@
                                             our Annual Performance Report for 2022 to all of our GoFeast “Steakholders”.
                                             <br>
                                             Read the full version of this report here:
-                                            <a href="https://gofeast.pk/pdf/Annual%20Performance%20Report_20221.pdf" target="_blank">Annual Report</a>
+                                            <a href="{{asset('assets/pdf/AnnualPerformanceReport_20221.pdf')}}" target="_blank">Annual Report</a>
                                         </p>
                                     </div>
                                     <!-- /.post-content -->

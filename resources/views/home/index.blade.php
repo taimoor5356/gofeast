@@ -80,6 +80,18 @@
         .main-carousel-banner .owl-stage-outer {
             overflow: hidden !important;
         }
+        .promotional-text {
+            font-size: 30px !important;
+        }
+        .top-brands-text {
+            font-size: 30px !important;
+        }
+        .trusted-by-brands-text {
+            font-size: 30px !important;
+        }
+        .order-from-gofeast-text {
+            font-size: 30px !important;
+        }
     }
 
     /* General styles for carousel items */
@@ -150,7 +162,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
-                <h1 class="pb-5 text-primary" style="font-size: 55px">Promotional Products!
+                <h1 class="pb-5 text-primary promotional-text" style="font-size: 55px">Promotional Products!
                 </h1>
             </div>
             <!-- /column -->
@@ -185,15 +197,35 @@
 <section class="wrapper bg-light px-0">
     <div class="container px-0">
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
-            <h3 class="display-4 text-primary" style="font-size: 55px;">Top Brands!</h3>
-            <section class="wrapper bg-light">
+            <h3 class="display-4 text-primary top-brands-text" style="font-size: 55px;">Top Brands!</h3>
+            <section class="wrapper bg-light" style="margin-top: 25px;">
                 <div class="container py-md-10">
                     <div class="carousel owl-carousel clients mb-0" data-responsive='{"0":{"items": "2"}, "768":{"items": "3"}, "992":{"items": "4"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpg')}}" alt="" loading="lazy"></div> <!-- Burger Lab -->
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="" loading="lazy"></div> <!-- Second Cup -->
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="" loading="lazy"></div> <!-- Gloria Jeans -->
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.jpeg')}}" alt="" loading="lazy"></div> <!-- Silver Burn -->
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="" loading="lazy"></div> <!-- Bunty Sajji -->
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2994&page=item" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpeg')}}" alt="" loading="lazy">
+                            </a>    
+                        </div> <!-- Burger Lab -->
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2984&page=item" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="" loading="lazy">
+                            </a>
+                        </div> <!-- Second Cup -->
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2990&page=item" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="" loading="lazy">
+                            </a>
+                        </div> <!-- Gloria Jeans -->
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2982&page=item" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.jpeg')}}" alt="" loading="lazy">
+                            </a>
+                        </div> <!-- Silver Burn -->
+                        <div class="item px-5">
+                            <a href="" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="" loading="lazy">
+                            </a>
+                        </div> <!-- Bunty Sajji -->
                         <!-- <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy"></div>
@@ -228,14 +260,30 @@
 <section class="wrapper bg-light px-0" style="margin-top: 50px;">
     <div class="container px-0">
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
-            <h3 class="display-4 text-primary" style="font-size: 55px;">Trusted by Brands!</h3>
-            <section class="wrapper bg-light">
+            <h3 class="display-4 text-primary trusted-by-brands-text" style="font-size: 55px;">Trusted by Brands!</h3>
+            <section class="wrapper bg-light" style="margin-top: 25px;">
                 <div class="container py-md-10">
-                    <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="4000" data-responsive='{"0":{"items": "2"}, "768":{"items": "3"}, "992":{"items": "4"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy"></div>
-                        <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="" loading="lazy"></div>
+                    <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="4000" data-responsive='{"0":{"items": "2"}, "768":{"items": "2"}, "992":{"items": "4"}, "1200":{"items": "4"}, "1400":{"items": "4"}}'>
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2972&page=item">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2986&page=item">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2975&page=item">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="item px-5">
+                            <a href="https://orders.gofeast.pk/store?id=2972&page=item">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="" loading="lazy">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -243,8 +291,8 @@
     </div>
 </section>
 
-<section class="wrapper px-0" style="margin-top: 10px;">
-    <h3 class="mt-lg-10 text-center py-5" style="font-size: 55px; color: white; background-color: #bd3c4a; width: 100%">Order from GoFeast!</h3>
+<section class="wrapper px-0" style="margin-top: 50px;">
+    <h3 class="mt-lg-10 text-center py-5 order-from-gofeast-text" style="font-size: 55px; color: white; background-color: #bd3c4a; width: 100%">Order from GoFeast!</h3>
     <div class="container px-0">
         <div class="row gx-lg-8 gx-xl-10 align-items-center text-center">
             <div class="col-lg-6 text-center">

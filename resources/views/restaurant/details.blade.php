@@ -72,73 +72,7 @@
             </div>
             <!-- Pagination Links -->
             <div class="d-flex justify-content-center mt-4">
-                @if ($restaurantItems->hasPages())
-                <nav>
-                    <ul class="pagination">
-                        {{-- Previous Page Link --}}
-                        @if ($restaurantItems->onFirstPage())
-                        <li class="page-item disabled" aria-disabled="true">
-                            <span class="page-link">&laquo;</span>
-                        </li>
-                        @else
-                        <li class="page-item">
-                            <a class="page-link" href="{{ $restaurantItems->previousPageUrl() }}" rel="prev">&laquo;</a>
-                        </li>
-                        @endif
-
-                        {{-- Page 1 --}}
-                        @if ($restaurantItems->currentPage() == 1)
-                        <li class="page-item active" aria-current="page">
-                            <span class="page-link">1</span>
-                        </li>
-                        @else
-                        <li class="page-item">
-                            <a class="page-link" href="{{ $restaurantItems->url(1) }}">1</a>
-                        </li>
-                        @endif
-
-                        {{-- Pages 2 and 3 --}}
-                        @for ($i = 2; $i <= 2; $i++)
-                            @if ($restaurantItems->currentPage() == $i)
-                            <li class="page-item active" aria-current="page">
-                                <span class="page-link">{{ $i }}</span>
-                            </li>
-                            @else
-                            <li class="page-item">
-                                <a class="page-link" href="{{ $restaurantItems->url($i) }}">{{ $i }}</a>
-                            </li>
-                            @endif
-                            @endfor
-
-                            {{-- Dots (Ellipsis) --}}
-                            @if ($restaurantItems->currentPage() > 2 && $restaurantItems->currentPage() < $restaurantItems->lastPage() - 1)
-                                <li class="page-item disabled"><span class="page-link">...</span></li>
-                                @endif
-
-                                {{-- Last Page Link --}}
-                                @if ($restaurantItems->currentPage() == $restaurantItems->lastPage())
-                                <li class="page-item active" aria-current="page">
-                                    <span class="page-link">{{ $restaurantItems->lastPage() }}</span>
-                                </li>
-                                @else
-                                <li class="page-item">
-                                    <a class="page-link" href="{{ $restaurantItems->url($restaurantItems->lastPage()) }}">{{ $restaurantItems->lastPage() }}</a>
-                                </li>
-                                @endif
-
-                                {{-- Next Page Link --}}
-                                @if ($restaurantItems->hasMorePages())
-                                <li class="page-item">
-                                    <a class="page-link" href="{{ $restaurantItems->nextPageUrl() }}" rel="next">&raquo;</a>
-                                </li>
-                                @else
-                                <li class="page-item disabled" aria-disabled="true">
-                                    <span class="page-link">&raquo;</span>
-                                </li>
-                                @endif
-                    </ul>
-                </nav>
-                @endif
+                {{ $restaurantItems->links('pagination::bootstrap-4') }}
             </div>
         </div>
     </div>

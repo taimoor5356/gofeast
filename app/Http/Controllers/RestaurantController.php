@@ -20,10 +20,13 @@ class RestaurantController extends Controller
     public function restaurantDetails($prettyName)
     {
         //
+        if (empty($prettyName)) {
+            return redirect()->back();
+        }
         $restaurant = DB::table('stores')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->first();
         if (isset($restaurant)) {
             $data['restaurant'] = $restaurant;
-            $data['restaurantItems'] = DB::table('items')->where('store_id', $restaurant->id)->paginate(18);
+            $data['restaurantItems'] = DB::table('items')->where('store_id', $restaurant->id)->where('status', 1)->paginate(18);
             $data['pretty_name'] = $restaurant->name;
             return view('restaurant.details', $data);
         }
