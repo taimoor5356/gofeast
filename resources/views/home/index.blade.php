@@ -200,28 +200,28 @@
             <h3 class="display-4 text-primary top-brands-text" style="font-size: 55px;">Top Brands!</h3>
             <section class="wrapper bg-light" style="margin-top: 25px;">
                 <div class="container py-md-10">
-                    <div class="carousel owl-carousel clients mb-0" data-responsive='{"0":{"items": "2"}, "768":{"items": "3"}, "992":{"items": "4"}, "1200":{"items": "5"}, "1400":{"items": "5"}}'>
-                        <div class="item px-5">
+                    <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}, "1200":{"items": "4"}, "1400":{"items": "4"}}'>
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2994&page=item" target="_blank">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/9.jpeg')}}" alt="Top Brand Product Image" loading="lazy">
                             </a>    
                         </div> <!-- Burger Lab -->
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2984&page=item" target="_blank">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/8.jpg')}}" alt="Top Brand Product Image" loading="lazy">
                             </a>
                         </div> <!-- Second Cup -->
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2990&page=item" target="_blank">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/3.png')}}" alt="Top Brand Product Image" loading="lazy">
                             </a>
                         </div> <!-- Gloria Jeans -->
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2982&page=item" target="_blank">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/1.jpeg')}}" alt="Top Brand Product Image" loading="lazy">
                             </a>
                         </div> <!-- Silver Burn -->
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="" target="_blank">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="Top Brand Product Image" loading="lazy">
                             </a>
@@ -263,23 +263,23 @@
             <h3 class="display-4 text-primary trusted-by-brands-text" style="font-size: 55px;">Trusted by Brands!</h3>
             <section class="wrapper bg-light" style="margin-top: 25px;">
                 <div class="container py-md-10">
-                    <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="4000" data-responsive='{"0":{"items": "2"}, "768":{"items": "2"}, "992":{"items": "4"}, "1200":{"items": "4"}, "1400":{"items": "4"}}'>
-                        <div class="item px-5">
+                    <div class="carousel owl-carousel clients mb-0" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="4000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}, "1200":{"items": "4"}, "1400":{"items": "4"}}'>
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2972&page=item">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="Trusted by Brands Image" loading="lazy">
                             </a>
                         </div>
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2986&page=item">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="Trusted by Brands Image" loading="lazy">
                             </a>
                         </div>
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2975&page=item">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="Trusted by Brands Image" loading="lazy">
                             </a>
                         </div>
-                        <div class="item px-5">
+                        <div class="item px-5 d-flex justify-content-center">
                             <a href="https://orders.gofeast.pk/store?id=2972&page=item">
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/7.jpg')}}" alt="Trusted by Brands Image" loading="lazy">
                             </a>
