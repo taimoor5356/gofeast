@@ -174,7 +174,6 @@
                                             <p />
 
                                         <h4 class="h4 mb-4">GoFeast,
-                                            <br>Suite 202 A, Mumtaz Plaza, B-17, Islamabad
                                             <br>Suite 209 A, Commercial Sector C, Bahria Town Lahore
                                         </h4>
                                         <p style="text-align:justify;">Please note that email communications will not necessarily be secure; accordingly, please do not

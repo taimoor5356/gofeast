@@ -8,7 +8,6 @@
                             alt="" />
                     </a>
                     <p class="mb-4">© 2024 GoFeast. <br class="d-none d-lg-block" />All rights reserved.</p>
-                    <p><span href="{{url('contact-us')}}" class="text">Suite 202 A, Mumtaz Plaza, B-17, Islamabad</span></p>
                     <p><span href="{{url('contact-us')}}" class="text">Suite 209 A, Commercial Sector C, Bahria Town Lahore</span></p>
                     <!-- <nav class="nav social ">
                             <a href="https://gomeattoken.medium.com/" target="_blank"><i

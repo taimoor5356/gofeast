@@ -185,9 +185,7 @@
 
                                         GoFeast IT Solutions (Pvt) Ltd.,
 
-                                        Address: 202 A Mumtaz Plaza B17 Islamabad,
-
-                                        209 A commercial sector c Bahria town lahore
+                                        Address: 209 A commercial sector c Bahria town lahore
 
                                         UNDER THE LAW, IF YOU KNOWINGLY MISREPRESENT THAT ONLINE MATERIAL IS INFRINGING, YOU MAY BE SUBJECT TO CRIMINAL PROSECUTION FOR PERJURY AND CIVIL PENALTIES, INCLUDING MONETARY DAMAGES, COURT COSTS, AND ATTORNEYS’ FEES.
 
