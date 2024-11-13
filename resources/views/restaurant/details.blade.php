@@ -51,8 +51,7 @@
             <div class="row">
                 @foreach($restaurantItems as $item)
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-                        <a href="https://orders.gofeast.pk/store?id={{$restaurant->id}}&page=store">
-                        <a href="https://orders.gofeast.pk/store?id={{$restaurant->id}}&cat_id={{$item->category?->parent_id}}&sub_id={{$item->category?->id}}&page=store">
+                        <a href="https://orders.gofeast.pk/store?id={{$item->store_id}}&cat_id={{$item->category?->id}}&sub_id={{$item->category?->parent_id}}&moduleId={{$item->store?->module_id}}&page=module">
                             <div class="d-flex flex-column justify-content-between align-items-center p-2"
                                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                                 <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
