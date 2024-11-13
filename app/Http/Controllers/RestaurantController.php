@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
+use App\Models\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -13,7 +15,7 @@ class RestaurantController extends Controller
     public function index($name = null, $location = null)
     {
         //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('active', 1)->paginate(18);
+        $data['restaurants'] = Store::with('items.category')->where('country_id', 19)->where('active', 1)->paginate(18);
         return view('restaurant.index', $data);
     }
 
@@ -23,10 +25,10 @@ class RestaurantController extends Controller
         if (empty($prettyName)) {
             return redirect()->back();
         }
-        $restaurant = DB::table('stores')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->first();
+        $restaurant = Store::with('items.category')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->first();
         if (isset($restaurant)) {
             $data['restaurant'] = $restaurant;
-            $data['restaurantItems'] = DB::table('items')->where('store_id', $restaurant->id)->where('status', 1)->paginate(18);
+            $data['restaurantItems'] = Item::with('category')->where('store_id', $restaurant->id)->where('status', 1)->paginate(18);
             $data['pretty_name'] = $restaurant->name;
             return view('restaurant.details', $data);
         }
