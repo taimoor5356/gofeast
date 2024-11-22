@@ -129,11 +129,11 @@
         <header class="wrapper px-0 bg-light">
             @include('layouts.nav-top')
             @include('layouts.nav-bar')
-            <div class="scrolling-container mt-3">
+            {{--<div class="scrolling-container mt-3">
                 <div class="scrolling-text">
                     <p style="font-weight: bold; color: #bd3c4a">Our services are now proudly operational in Bahria Town, Lahore, bringing exceptional convenience and quality. Experience a new level of service where innovation meets excellence in one of Lahore’s most prestigious communities.</p>
                 </div>
-            </div>
+            </div>--}}
         </header>
         @yield('content')
     </div>

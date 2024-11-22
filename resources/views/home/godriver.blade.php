@@ -40,6 +40,7 @@
 <meta name="twitter:image" content="https://www.gofeast.pk/assets/images/go-rider-banner.jpg">
 @endsection
 @section('content')
+
 <!-- /section -->
 <section class="wrapper bg-light">
     <div class="container pt-3 pt-md-3 pb-10 pb-md-10">
@@ -94,7 +95,7 @@
                                         <h4>GoDriver iOS App</h4>
                                         <p class="mb-2">Download GoDriver iOS App to get yourself registered
                                         </p>
-                                        <a href="https://apps.apple.com/us/app/gomeat-driver/id1479449038"
+                                        <a href="https://apps.apple.com/us/app/gofeast-driver/id1479449038"
                                             target="_blank"
                                             class="btn btn-expand btn-soft-primary rounded-pill">
                                             <i class="uil uil-download-alt"></i>
@@ -129,6 +130,23 @@
                             from our GoDriver
                             App</p> -->
 
+                <div class="row d-flex text-center py-5">
+                    <div class="col mb-1">
+
+                        <a href="https://www.youtube.com/embed/d1qHWl38Rls" target="_blank"
+                            class="btn btn-expand btn-soft-primary ripple rounded-pill mx-auto" data-glightbox>
+                            <i class="uil uil-signin"></i>
+                            <span>Learn Sign up Process</span>
+                        </a>
+                    </div>
+                    <!--<div class="col mb-1">-->
+                    <!--    <a class="btn btn-expand btn-soft-primary rounded-pill">-->
+                    <!--        <i class="uil uil-list-ol-alt"></i>-->
+                    <!--        <span>Learn About Tasks</span>-->
+                    <!--    </a>-->
+                    <!--</div>-->
+                </div>
+
 
 
             </div>
@@ -160,13 +178,13 @@
                         <img src="{{asset('assets/img/icons/lineal/clock-3.svg')}}"
                             class="svg-inject icon-svg solid-mono text-primary mb-3" alt="" />
 
-                        <p>Flexible Timings</p>
+                        <p>Work On Your Own Time</p>
                     </div>
                     <!--/column -->
                     <div class="col-md-4">
                         <img src="{{asset('assets/img/icons/lineal/coin.svg')}}"
                             class="svg-inject icon-svg solid-mono text-primary  mb-3" alt="" />
-                        <p>Competitive Payouts</p>
+                        <p>Highest Pay Per Delivery</p>
                     </div>
                     <!--/column -->
                 </div>
@@ -196,7 +214,7 @@
                     </div>
                     <div>
                         <h5 class="mb-1">Phone</h5>
-                        <p><a href="tel:+923377777761" class="link-body">+92 337-7777-761</a></p>
+                        <p><a href="tel:13123133533" class="link-body">+1 312-313-3533</a></p>
                     </div>
                 </div>
                 <div class="d-flex flex-row">
@@ -205,8 +223,8 @@
                     </div>
                     <div>
                         <h5 class="mb-1">E-mail</h5>
-                        <p><a href="mailto:cs@gofeast.pk"
-                                class="link-body">cs@gofeast.pk</a></p>
+                        <p><a href="mailto:driversupport@gofeast.io"
+                                class="link-body">driversupport@gofeast.io</a></p>
                     </div>
                 </div>
             </div>

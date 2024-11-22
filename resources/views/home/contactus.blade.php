@@ -105,7 +105,7 @@
                     <div>
                         <h5 class="mb-1">Phone</h5>
                         <p>
-                            <a href="tel:+923377777761">+92 337-7777-761</a>
+                            <a href="tel:+19085740454">+1908-574-0454</a>
                         </p>
                     </div>
                 </div>
@@ -115,8 +115,8 @@
                     </div>
                     <div>
                         <h5 class="mb-1">E-mail</h5>
-                        <p class="mb-0"><a href="mailto:cs@gofeast.pk"
-                                class="link-body">cs@gofeast.pk</a>
+                        <p class="mb-0"><a href="mailto:cs@gofeast.io"
+                                class="link-body">cs@gofeast.io</a>
                         </p>
                     </div>
                 </div>

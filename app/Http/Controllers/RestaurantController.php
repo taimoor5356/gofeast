@@ -6,6 +6,7 @@ use App\Models\Item;
 use App\Models\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 
 class RestaurantController extends Controller
 {
@@ -15,7 +16,16 @@ class RestaurantController extends Controller
     public function index($name = null, $location = null)
     {
         //
-        $data['restaurants'] = Store::with('items.category')->where('country_id', 19)->where('active', 1)->paginate(18);
+        // $response = Http::withHeaders([
+        //     'Content-Type' => 'application/json',
+        //     'zoneId' => 1,
+        //     'moduleId' => 1,
+        //     'country' => "US",
+        //     // 'lat' => ,
+        //     // 'long' => ,
+        // ])->get("https://dashboard.gomeat.io/api/v1/stores/get-stores");
+        // dd($response->json());
+        $data['restaurants'] = Store::with('items.category')->where('country_id', 25)->where('active', 1)->paginate(18);
         return view('restaurant.index', $data);
     }
 
@@ -25,7 +35,7 @@ class RestaurantController extends Controller
         if (empty($prettyName)) {
             return redirect()->back();
         }
-        $restaurant = Store::with('items.category')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->first();
+        $restaurant = Store::with('items.category')->where('country_id', 25)->where('pretty_name', $prettyName)->where('active', 1)->first();
         if (isset($restaurant)) {
             $data['restaurant'] = $restaurant;
             $data['restaurantItems'] = Item::with('category')->where('store_id', $restaurant->id)->where('status', 1)->paginate(18);
@@ -37,7 +47,7 @@ class RestaurantController extends Controller
     public function delivery()
     {
         //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('delivery', 1)->where('active', 1)->paginate(18);
+        $data['restaurants'] = DB::table('stores')->where('country_id', 25)->where('delivery', 1)->where('active', 1)->paginate(18);
         $data['delivery_meta_tags'] = <<<EOT
             <!-- Meta Title --> 
             <title>Delivery Service | GoFeast.pk - Fast and Reliable Online Food & Grocery Delivery in Bahria Town Lahore</title> 
@@ -70,7 +80,7 @@ class RestaurantController extends Controller
     public function pickup()
     {
         // take away ON
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('take_away', 1)->where('active', 1)->paginate(18);
+        $data['restaurants'] = DB::table('stores')->where('country_id', 25)->where('take_away', 1)->where('active', 1)->paginate(18);
         $data['pickup_meta_tags'] = <<<EOT
             <!-- Meta Title --> 
             <title>Pickup Service | GoFeast.pk - Online Food & Grocery Pickup in Bahria Town Lahore</title> 
@@ -103,14 +113,14 @@ class RestaurantController extends Controller
     public function homeChef()
     {
         //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('home_chef', 1)->where('active', 1)->paginate(18);
+        $data['restaurants'] = DB::table('stores')->where('country_id', 25)->where('home_chef', 1)->where('active', 1)->paginate(18);
         return view('restaurant.index', $data);
     }
 
     public function featured()
     {
         //
-        $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('featured', 1)->where('active', 1)->paginate(18);
+        $data['restaurants'] = DB::table('stores')->where('country_id', 25)->where('featured', 1)->where('active', 1)->paginate(18);
         return view('restaurant.index', $data);
     }
 

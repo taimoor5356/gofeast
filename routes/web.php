@@ -28,6 +28,7 @@ Route::get('/contact-us', [HomeController::class, 'contactus'])->name('contactus
 Route::get('/faqs', [HomeController::class, 'faqs'])->name('faqs');
 Route::get('/go-driver', [HomeController::class, 'godriver'])->name('godriver');
 Route::get('/go-partner', [HomeController::class, 'gopartner'])->name('gopartner');
+Route::get('/gomt', [HomeController::class, 'gomt'])->name('gomt');
 Route::get('/privacy-policy', [HomeController::class, 'privacypolicy'])->name('privacypolicy');
 Route::get('/refund-policy', [HomeController::class, 'refundpolicy'])->name('refundpolicy');
 Route::get('/terms-and-conditions', [HomeController::class, 'termsandconditions'])->name('termsandconditions');

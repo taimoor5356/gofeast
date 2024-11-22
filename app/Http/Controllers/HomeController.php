@@ -84,6 +84,11 @@ class HomeController extends Controller
         //
         return view('home.vendorterms');
     }
+    public function gomt()
+    {
+        //
+        return view('home.gomt');
+    }
 
     /**
      * Show the form for creating a new resource.
