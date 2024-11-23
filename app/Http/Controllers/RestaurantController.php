@@ -6,6 +6,9 @@ use App\Models\Item;
 use App\Models\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class RestaurantController extends Controller
 {
@@ -15,23 +18,61 @@ class RestaurantController extends Controller
     public function index($name = null, $location = null)
     {
         //
-        $data['restaurants'] = Store::with('items.category')->where('country_id', 19)->where('active', 1)->paginate(18);
-        return view('restaurant.index', $data);
+        $url = "https://dashboard.gomeat.io/api/v1/get-all-stores/19";
+        $response = Http::get($url);
+        $data = $response->json();
+        $currentPage = request()->get('page', 1); // Get the current page number from the request
+        $perPage = 12; // Number of items per page
+        $storesCollection = collect($data); // Convert array to collection
+        
+        // Slice the data to get the items for the current page
+        $currentPageStores = $storesCollection->slice(($currentPage - 1) * $perPage, $perPage)->values();
+        
+        // Create the paginator
+        $paginatedStores = new LengthAwarePaginator(
+            $currentPageStores,
+            $storesCollection->count(),
+            $perPage,
+            $currentPage,
+            ['path' => request()->url(), 'query' => request()->query()]
+        );
+        
+        return view('restaurant.index', ['restaurants' => $paginatedStores]);
     }
 
     public function restaurantDetails($prettyName)
     {
         //
+        //
         if (empty($prettyName)) {
             return redirect()->back();
         }
-        $restaurant = Store::with('items.category')->where('country_id', 19)->where('pretty_name', $prettyName)->where('active', 1)->first();
-        if (isset($restaurant)) {
-            $data['restaurant'] = $restaurant;
-            $data['restaurantItems'] = Item::with('category')->where('store_id', $restaurant->id)->where('status', 1)->paginate(18);
-            $data['pretty_name'] = $restaurant->name;
-            return view('restaurant.details', $data);
-        }
+        // $restaurant = Store::with('items.category')->where('country_id', 25)->where('pretty_name', $prettyName)->where('active', 1)->first();
+        $url = "https://dashboard.gomeat.io/api/v1/get-store-items/".urlencode($prettyName);
+        $response = Http::get($url);
+        $jsonResponse = $response->json();
+        $restaurant = $jsonResponse['restaurant'];
+        $items = $jsonResponse['items'];
+        $currentPage = request()->get('page', 1); // Get the current page number from the request
+        $perPage = 12; // Number of items per page
+        $itemsCollection = collect($items); // Convert array to collection
+        
+        // Slice the data to get the items for the current page
+        $currentPageStores = $itemsCollection->slice(($currentPage - 1) * $perPage, $perPage)->values();
+        
+        // Create the paginator
+        $paginatedItems = new LengthAwarePaginator(
+            $currentPageStores,
+            $itemsCollection->count(),
+            $perPage,
+            $currentPage,
+            ['path' => request()->url(), 'query' => request()->query()]
+        );
+        $data['restaurant'] = $restaurant;
+        $data['restaurantItems'] = $paginatedItems;
+        $data['pretty_name'] = $restaurant['name'];
+        
+        return view('restaurant.details', $data);
     }
 
     public function delivery()
