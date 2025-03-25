@@ -58,7 +58,7 @@
                 @if (count($restaurants) > 0)
                 @foreach($restaurants as $restaurant)
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
-                    <a href="@if(!empty($restaurant->pretty_name)) {{route('restaurant.details', [$restaurant->pretty_name])}} @else # @endif">
+                    <a href="@if(!empty(!empty($restaurant->address) ? $restaurant->address : $restaurant['address'])) {{route('restaurant.details', [!empty($restaurant->pretty_name) ? $restaurant->pretty_name : $restaurant['pretty_name']])}} @else # @endif">
                         <div class="d-flex flex-column justify-content-between align-items-center p-2"
                             style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                             <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
