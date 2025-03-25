@@ -79,7 +79,7 @@ class RestaurantController extends Controller
     {
         //
         // $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('delivery', 1)->where('active', 1)->paginate(18);
-        $url = "https://dashboard.gomeat.io/api/v1/get-all-stores/19/delivery";
+        $url = "https://dashboard.gomeat.io/api/v1/get-stores/19/delivery";
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
@@ -98,6 +98,7 @@ class RestaurantController extends Controller
             ['path' => request()->url(), 'query' => request()->query()]
         );
         $data['restaurants'] = $paginatedStores;
+        dd($data['restaurants']);
         $data['delivery_meta_tags'] = <<<EOT
             <!-- Meta Title --> 
             <title>Delivery Service | GoFeast.pk - Fast and Reliable Online Food & Grocery Delivery in Bahria Town Lahore</title> 
@@ -131,7 +132,7 @@ class RestaurantController extends Controller
     {
         // take away ON
         // $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('take_away', 1)->where('active', 1)->paginate(18);
-        $url = "https://dashboard.gomeat.io/api/v1/get-all-stores/19/take_away";
+        $url = "https://dashboard.gomeat.io/api/v1/get-stores/19/take_away";
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
@@ -183,7 +184,7 @@ class RestaurantController extends Controller
     {
         //
         // $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('home_chef', 1)->where('active', 1)->paginate(18);
-        $url = "https://dashboard.gomeat.io/api/v1/get-all-stores/19/home_chef";
+        $url = "https://dashboard.gomeat.io/api/v1/get-stores/19/home_chef";
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
