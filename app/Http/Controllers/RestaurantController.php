@@ -98,7 +98,6 @@ class RestaurantController extends Controller
             ['path' => request()->url(), 'query' => request()->query()]
         );
         $data['restaurants'] = $paginatedStores;
-        dd($data['restaurants']);
         $data['delivery_meta_tags'] = <<<EOT
             <!-- Meta Title --> 
             <title>Delivery Service | GoFeast.pk - Fast and Reliable Online Food & Grocery Delivery in Bahria Town Lahore</title> 
