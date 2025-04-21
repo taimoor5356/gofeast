@@ -22,7 +22,7 @@ class RestaurantController extends Controller
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
-        $perPage = 12; // Number of items per page
+        $perPage = 500; // Number of items per page
         $storesCollection = collect($data); // Convert array to collection
         
         // Slice the data to get the items for the current page
@@ -54,7 +54,7 @@ class RestaurantController extends Controller
         $restaurant = $jsonResponse['restaurant'];
         $items = $jsonResponse['items'];
         $currentPage = request()->get('page', 1); // Get the current page number from the request
-        $perPage = 12; // Number of items per page
+        $perPage = 500; // Number of items per page
         $itemsCollection = collect($items); // Convert array to collection
         
         // Slice the data to get the items for the current page
@@ -83,7 +83,7 @@ class RestaurantController extends Controller
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
-        $perPage = 12; // Number of items per page
+        $perPage = 500; // Number of items per page
         $storesCollection = collect($data); // Convert array to collection
         
         // Slice the data to get the items for the current page
@@ -135,7 +135,7 @@ class RestaurantController extends Controller
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
-        $perPage = 12; // Number of items per page
+        $perPage = 500; // Number of items per page
         $storesCollection = collect($data); // Convert array to collection
         
         // Slice the data to get the items for the current page
@@ -187,7 +187,7 @@ class RestaurantController extends Controller
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
-        $perPage = 12; // Number of items per page
+        $perPage = 500; // Number of items per page
         $storesCollection = collect($data); // Convert array to collection
         
         // Slice the data to get the items for the current page
