@@ -26,12 +26,12 @@
                         <li class="nav-item">
                             <a class="dropdown-item <?php echo ($current_page == 'restaurants') ? 'active' : ''; ?>" href="{{route('restaurants')}}">All Restaurants</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="dropdown-item <?php echo ($current_page == 'delivery') ? 'active' : ''; ?>" href="{{route('restaurant.delivery')}}">Delivery</a>
                         </li>
                         <li class="nav-item">
                             <a class="dropdown-item <?php echo ($current_page == 'pickup') ? 'active' : ''; ?>" href="{{route('restaurant.pickup')}}">Pickup</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li class="nav-item">
