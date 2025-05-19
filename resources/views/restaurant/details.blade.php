@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('meta_tags')
-
+    {!! $schema_code !!}
 @endsection
 @section('styles')
 <style>

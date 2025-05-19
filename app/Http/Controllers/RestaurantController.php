@@ -71,6 +71,7 @@ class RestaurantController extends Controller
         $data['restaurant'] = $restaurant;
         $data['restaurantItems'] = $paginatedItems;
         $data['pretty_name'] = $restaurant['name'];
+        $data['schema_code'] = $restaurant['schema_code'];
         
         return view('restaurant.details', $data);
     }
