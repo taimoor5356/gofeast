@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
@@ -67,7 +68,16 @@ class HomeController extends Controller
     public function termsandconditions()
     {
         //
-        return view('home.termsandconditions');
+        //
+        $url = "https://dashboard.gomeat.io/admin/business-settings/pages/search-terms-and-conditions";
+
+        $response = Http::post($url, [
+            'country_id' => 1  // Replace with your desired country ID
+        ]);
+
+        $data = $response->json();
+        
+        return view('home.termsandconditions', compact('data'));
     }
     public function termsofuse()
     {
