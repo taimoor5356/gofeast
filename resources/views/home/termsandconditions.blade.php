@@ -26,6 +26,7 @@
                                         <center>
                                             <h2 class="h1 mb-4">Terms and Conditions</h2>
                                         </center>
+                                        {!! $data !!}
                                     </div>
                                     <!-- /.post-content -->
 

@@ -58,25 +58,24 @@ class HomeController extends Controller
     public function privacypolicy()
     {
         //
-        return view('home.privacypolicy');
+        $url = "https://dashboard.gomeat.io/api/v1/privacy-policy/19";
+        $data = Http::get($url);
+        $data = json_decode($data);
+        return view('home.privacypolicy', compact('data'));
     }
     public function refundpolicy()
     {
         //
-        return view('home.refundpolicy');
+        $url = "https://dashboard.gomeat.io/api/v1/refund-policy/19";
+        $data = Http::get($url);
+        $data = json_decode($data);
+        return view('home.refundpolicy', compact('data'));
     }
     public function termsandconditions()
     {
-        //
-        //
-        $url = "https://dashboard.gomeat.io/admin/business-settings/pages/search-terms-and-conditions";
-
-        $response = Http::post($url, [
-            'country_id' => 1  // Replace with your desired country ID
-        ]);
-
-        $data = $response->json();
-        
+        $url = "https://dashboard.gomeat.io/api/v1/terms-and-conditions/19";
+        $data = Http::get($url);
+        $data = json_decode($data);
         return view('home.termsandconditions', compact('data'));
     }
     public function termsofuse()
