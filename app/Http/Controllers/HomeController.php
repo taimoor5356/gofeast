@@ -61,6 +61,7 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/privacy-policy/19";
         $data = Http::get($url);
         $data = json_decode($data);
+        dd($data);
         return view('home.privacypolicy', compact('data'));
     }
     public function refundpolicy()
