@@ -58,7 +58,7 @@ class HomeController extends Controller
     public function privacypolicy()
     {
         //
-        $url = "https://dashboard.gomeat.io/api/v1/privacy-policy/19";
+        $url = "https://dashboard.gofeast.io/api/v1/privacy-policy/19";
         $data = Http::get($url);
         $data = json_decode($data);
         return view('home.privacypolicy', compact('data'));
@@ -66,14 +66,14 @@ class HomeController extends Controller
     public function refundpolicy()
     {
         //
-        $url = "https://dashboard.gomeat.io/api/v1/refund-policy/19";
+        $url = "https://dashboard.gofeast.io/api/v1/refund-policy/19";
         $data = Http::get($url);
         $data = json_decode($data);
         return view('home.refundpolicy', compact('data'));
     }
     public function termsandconditions()
     {
-        $url = "https://dashboard.gomeat.io/api/v1/terms-and-conditions/19";
+        $url = "https://dashboard.gofeast.io/api/v1/terms-and-conditions/19";
         $data = Http::get($url);
         $data = json_decode($data);
         return view('home.termsandconditions', compact('data'));
