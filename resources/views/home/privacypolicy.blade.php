@@ -21,7 +21,7 @@
                             <div class="classic-view">
                                 <article class="post">
                                     <div class="post-content mb-5">
-                                        {{ $data }}
+                                        {!! $data !!}
                                     </div>
                                     <!-- /.post-content -->
 
