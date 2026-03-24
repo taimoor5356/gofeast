@@ -94,7 +94,7 @@
                                         <h4>GoDriver iOS App</h4>
                                         <p class="mb-2">Download GoDriver iOS App to get yourself registered
                                         </p>
-                                        <a href="https://apps.apple.com/us/app/gomeat-driver/id1479449038"
+                                        <a href="https://apps.apple.com/pk/app/gofeast-driver/id6757268774"
                                             target="_blank"
                                             class="btn btn-expand btn-soft-primary rounded-pill">
                                             <i class="uil uil-download-alt"></i>
