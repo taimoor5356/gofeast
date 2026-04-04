@@ -32,7 +32,7 @@
                                             <h2>About GoFeast</h2>
                                             <p><strong>GoFeast Pvt Ltd</strong> and its subsidiaries and affiliates (“GoFeast,” “we,” “our,” or “us”) own and operate:</p>
                                             <ul>
-                                            <li>Websites: <strong>gofeast.pk</strong>, <strong>orders.gofeast.pk</strong></li>
+                                            <li>Websites: <strong>gofeast.pk</strong>, <strong>order.gofeast.io</strong></li>
                                             <li>Technology platforms</li>
                                             <li>Online and mobile services (including Mobile Applications)</li>
                                             </ul>

@@ -114,7 +114,7 @@
                                             <div class="card-body">
                                                 <p>GoFeast platform consists of the Online Ordering System which
                                                     is
-                                                    accessible via world wide web (www.orders.gofeast.pk) and
+                                                    accessible via world wide web (www.order.gofeast.io) and
                                                     GoFeast
                                                     mobile apps based on IOS and Android. GoFeast app users can
                                                     select

@@ -32,7 +32,7 @@
 
     <ul>
         <li><a href="https://gofeast.pk">gofeast.pk</a></li>
-        <li><a href="https://orders.gofeast.pk">orders.gofeast.pk</a></li>
+        <li><a href="https://order.gofeast.io">order.gofeast.io</a></li>
         <li>Related mobile websites and mobile applications</li>
         <li>Any other sites and applications that reference this Privacy Policy (collectively referred to as the “Sites”)</li>
     </ul>
