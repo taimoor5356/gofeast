@@ -79,7 +79,7 @@
         <div class="navbar-other w-100 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
                 <li class="nav-item d-none d-md-block">
-                    <a href="https://order.gofeast.pk" target="_blank"
+                    <a href="https://order.gofeast.io" target="_blank"
                         class="btn btn-sm btn-primary rounded-pill">Order Food Online!</a>
                 </li>
                 <li class="nav-item d-lg-none">
