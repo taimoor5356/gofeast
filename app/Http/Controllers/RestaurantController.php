@@ -19,13 +19,31 @@ class RestaurantController extends Controller
     {
         //
         $searchTerm = request()->get('name');
+        $searchType = request()->get('type', 'store');
 
-        if (!empty($searchTerm)) {
+        if (!empty($searchTerm) && $searchType === 'item') {
+            $url = "https://dashboard.gofeast.io/api/v1/search-in-item/19?name=" . urlencode($searchTerm);
+            $response = Http::get($url);
+            $results = $response->json('results', []);
+
+            $data = collect($results)->map(function ($result) {
+                $item = $result['item'] ?? [];
+                return [
+                    'result_type' => 'item',
+                    'name' => $item['name'] ?? '',
+                    'subtitle' => $item['store_name'] ?? '',
+                    'image_url' => !empty($item['image_full_url'])
+                        ? $item['image_full_url']
+                        : 'https://dashboard.gofeast.io/storage/app/public/product/' . ($item['image'] ?? ''),
+                    'link' => null,
+                ];
+            })->values()->all();
+        } elseif (!empty($searchTerm)) {
             $url = "https://dashboard.gofeast.io/api/v1/search-in-store/19?name=" . urlencode($searchTerm);
             $response = Http::get($url);
-            $json = $response->json();
+            $stores = $response->json('stores', []);
 
-            $storeCards = collect($json['stores'] ?? [])->map(function ($store) {
+            $data = collect($stores)->map(function ($store) {
                 return [
                     'result_type' => 'store',
                     'name' => $store['name'] ?? '',
@@ -35,22 +53,7 @@ class RestaurantController extends Controller
                         : 'https://dashboard.gofeast.io/storage/app/public/store/' . ($store['logo'] ?? ''),
                     'link' => !empty($store['pretty_name']) ? route('restaurant.details', [$store['pretty_name']]) : null,
                 ];
-            });
-
-            $itemCards = collect($json['items'] ?? [])->map(function ($item) {
-                $storePrettyName = $item['store']['pretty_name'] ?? null;
-                return [
-                    'result_type' => 'item',
-                    'name' => $item['name'] ?? '',
-                    'subtitle' => $item['store']['name'] ?? '',
-                    'image_url' => !empty($item['image_full_url'])
-                        ? $item['image_full_url']
-                        : 'https://dashboard.gofeast.io/storage/app/public/product/' . ($item['image'] ?? ''),
-                    'link' => !empty($storePrettyName) ? route('restaurant.details', [$storePrettyName]) : null,
-                ];
-            });
-
-            $data = $storeCards->concat($itemCards)->values()->all();
+            })->values()->all();
         } else {
             $url = "https://dashboard.gofeast.io/api/v1/get-all-stores/19";
             $response = Http::get($url);
