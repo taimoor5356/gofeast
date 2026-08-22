@@ -33,7 +33,7 @@
                     </ul>
                     <input type="hidden" name="type" id="topSearchTypeInput" value="{{ $searchType }}">
                 </div>
-                <input type="search" name="name" class="form-control form-control-sm" placeholder="Search restaurant or food" value="{{ request('name') }}">
+                <input type="search" name="name" class="form-control form-control-sm" placeholder="Search" value="{{ request('name') }}">
                 <button type="submit" class="top-search-submit" aria-label="Search">
                     <i class="uil uil-search"></i>
                 </button>
