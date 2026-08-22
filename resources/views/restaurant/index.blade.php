@@ -58,12 +58,35 @@
                 @if (count($restaurants) > 0)
                 @foreach($restaurants as $restaurant)
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
+                    @if(is_array($restaurant) && !empty($restaurant['result_type']))
+                    <a href="{{ $restaurant['link'] ?? '#' }}">
+                        <div class="d-flex flex-column justify-content-between align-items-center p-2"
+                            style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
+                            <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <img src="{{ $restaurant['image_url'] }}"
+                                    class="img-fluid restaurant-image" referrerpolicy="no-referrer"
+                                    style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="{{ $restaurant['result_type'] === 'item' ? 'Product Image' : 'Restaurant Image' }}">
+                            </div>
+                            <div class="mt-auto text-start border-top border-default pt-2" style="width: 100%;">
+                                <p style="font-size: 15px; font-weight: bold; margin-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">
+                                    {{ $restaurant['name'] }}
+                                    @if($restaurant['result_type'] === 'item')
+                                    <span class="badge bg-primary" style="font-size: 10px; vertical-align: middle;">Item</span>
+                                    @endif
+                                </p>
+                                <p style="font-size: 12px; color: #555; margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-start">
+                                    {{ $restaurant['subtitle'] }}
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    @else
                     <a href="@if(!empty(!empty($restaurant->address) ? $restaurant->address : $restaurant['address'])) {{route('restaurant.details', [!empty($restaurant->pretty_name) ? $restaurant->pretty_name : $restaurant['pretty_name']])}} @else # @endif">
                         <div class="d-flex flex-column justify-content-between align-items-center p-2"
                             style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                             <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                                <img src="https://dashboard.gomeat.io/storage/app/public/store/{{!empty($restaurant->logo) ? $restaurant->logo : $restaurant['logo']}}"
-                                    class="img-fluid restaurant-image"
+                                <img src="https://dashboard.gofeast.io/storage/app/public/store/{{!empty($restaurant->logo) ? $restaurant->logo : $restaurant['logo']}}"
+                                    class="img-fluid restaurant-image" referrerpolicy="no-referrer"
                                     style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="Restaurant Image">
                             </div>
                             <div class="mt-auto text-start border-top border-default pt-2" style="width: 100%;">
@@ -74,6 +97,7 @@
                             </div>
                         </div>
                     </a>
+                    @endif
                 </div>
                 @endforeach
                 @else

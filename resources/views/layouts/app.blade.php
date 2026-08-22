@@ -93,6 +93,68 @@
                 /* Move completely off-screen */
             }
         }
+
+        /* Top red bar search */
+        .nav-top-bar {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        .top-search-wrap {
+            margin-top: 10px;
+        }
+
+        .top-search-form {
+            position: relative;
+            width: 100%;
+        }
+
+        .top-search-submit {
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 50%;
+            background-color: transparent;
+            color: #555;
+            font-size: 14px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .top-search-submit:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .top-search-form input[type="search"] {
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 36px;
+            border: 0;
+            border-radius: 50px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        @media (min-width: 768px) {
+            .top-search-wrap {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 0;
+            }
+
+            .top-search-form {
+                width: 280px;
+            }
+        }
     </style>
 
     @yield('styles')

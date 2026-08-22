@@ -55,8 +55,8 @@
                             <div class="d-flex flex-column justify-content-between align-items-center p-2"
                                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                                 <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                                    <img src="https://dashboard.gomeat.io/storage/app/public/product/{{$item['image']}}"
-                                        class="img-fluid restaurant-image"
+                                    <img src="https://dashboard.gofeast.io/storage/app/public/product/{{$item['image']}}"
+                                        class="img-fluid restaurant-image" referrerpolicy="no-referrer"
                                         style="border-radius: 15px; width: 100%; height: 150px; object-fit: cover;" alt="Product Image">
                                 </div>
                                 <div class="mt-auto text-start border-top border-default pt-2" style="width: 100%;">

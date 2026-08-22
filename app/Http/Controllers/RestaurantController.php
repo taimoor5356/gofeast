@@ -18,9 +18,45 @@ class RestaurantController extends Controller
     public function index($name = null, $location = null)
     {
         //
-        $url = "https://dashboard.gomeat.io/api/v1/get-all-stores/19";
-        $response = Http::get($url);
-        $data = $response->json();
+        $searchTerm = request()->get('name');
+
+        if (!empty($searchTerm)) {
+            $url = "https://dashboard.gofeast.io/api/v1/search-in-store/19?name=" . urlencode($searchTerm);
+            $response = Http::get($url);
+            $json = $response->json();
+
+            $storeCards = collect($json['stores'] ?? [])->map(function ($store) {
+                return [
+                    'result_type' => 'store',
+                    'name' => $store['name'] ?? '',
+                    'subtitle' => $store['address'] ?? '',
+                    'image_url' => !empty($store['logo_full_url'])
+                        ? $store['logo_full_url']
+                        : 'https://dashboard.gofeast.io/storage/app/public/store/' . ($store['logo'] ?? ''),
+                    'link' => !empty($store['pretty_name']) ? route('restaurant.details', [$store['pretty_name']]) : null,
+                ];
+            });
+
+            $itemCards = collect($json['items'] ?? [])->map(function ($item) {
+                $storePrettyName = $item['store']['pretty_name'] ?? null;
+                return [
+                    'result_type' => 'item',
+                    'name' => $item['name'] ?? '',
+                    'subtitle' => $item['store']['name'] ?? '',
+                    'image_url' => !empty($item['image_full_url'])
+                        ? $item['image_full_url']
+                        : 'https://dashboard.gofeast.io/storage/app/public/product/' . ($item['image'] ?? ''),
+                    'link' => !empty($storePrettyName) ? route('restaurant.details', [$storePrettyName]) : null,
+                ];
+            });
+
+            $data = $storeCards->concat($itemCards)->values()->all();
+        } else {
+            $url = "https://dashboard.gofeast.io/api/v1/get-all-stores/19";
+            $response = Http::get($url);
+            $data = $response->json();
+        }
+
         $currentPage = request()->get('page', 1); // Get the current page number from the request
         $perPage = 500; // Number of items per page
         $storesCollection = collect($data); // Convert array to collection
@@ -48,7 +84,7 @@ class RestaurantController extends Controller
             return redirect()->back();
         }
         // $restaurant = Store::with('items.category')->where('country_id', 25)->where('pretty_name', $prettyName)->where('active', 1)->first();
-        $url = "https://dashboard.gomeat.io/api/v1/get-store-items/".urlencode($prettyName);
+        $url = "https://dashboard.gofeast.io/api/v1/get-store-items/".urlencode($prettyName);
         $response = Http::get($url);
         $jsonResponse = $response->json();
         $restaurant = $jsonResponse['restaurant'];
@@ -80,7 +116,7 @@ class RestaurantController extends Controller
     {
         //
         // $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('delivery', 1)->where('active', 1)->paginate(18);
-        $url = "https://dashboard.gomeat.io/api/v1/get-stores/19/delivery";
+        $url = "https://dashboard.gofeast.io/api/v1/get-stores/19/delivery";
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
@@ -132,7 +168,7 @@ class RestaurantController extends Controller
     {
         // take away ON
         // $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('take_away', 1)->where('active', 1)->paginate(18);
-        $url = "https://dashboard.gomeat.io/api/v1/get-stores/19/pickup";
+        $url = "https://dashboard.gofeast.io/api/v1/get-stores/19/pickup";
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
@@ -184,7 +220,7 @@ class RestaurantController extends Controller
     {
         //
         // $data['restaurants'] = DB::table('stores')->where('country_id', 19)->where('home_chef', 1)->where('active', 1)->paginate(18);
-        $url = "https://dashboard.gomeat.io/api/v1/get-stores/19/homechef";
+        $url = "https://dashboard.gofeast.io/api/v1/get-stores/19/homechef";
         $response = Http::get($url);
         $data = $response->json();
         $currentPage = request()->get('page', 1); // Get the current page number from the request
