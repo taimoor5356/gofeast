@@ -64,7 +64,7 @@
                         <li><a href="{{url('go-partner')}}">Become a GoPartner</a></li>
                         <li><a href="{{url('go-driver')}}">Become a GoDriver</a></li>
                         <!-- <li><a href="#">Privacy Policy</a></li> -->
-                        <li><a href="{{url('site-map.xml')}}">Sitemap</a>
+                        <!-- <li><a href="{{url('site-map.xml')}}">Sitemap</a> -->
                         </li>
                     </ul>
                 </div>
