@@ -5,6 +5,11 @@
 @elseif (!empty($delivery_meta_tags))
 {!! $delivery_meta_tags !!}
 @endif
+<title>Top Restaurants in Lahore | Order Delivery on Gofeast</title>
+<meta name="description" content="Top restaurants and local cafes in Bahria Town, Lahore on Gofeast. Check updated menus, prices, and special deals for fast delivery to your home or office! ">
+
+<meta name="robots" content="index, follow">
+
 @endsection
 @section('styles')
 <style>
@@ -51,7 +56,7 @@
 <section class="wrapper px-0" style="background-size: 100% 100%;">
     <div class="container">
         <p>
-            <a href="https://www.gofeast.pk">Home </a> > Restaurants
+            <a href="https://www.gofeast.pk">Home </a> > {{ request('type') === 'item' ? 'Items' : 'Restaurants' }}
         </p>
         <div class="container-fluid p-0">
             <div class="row">
