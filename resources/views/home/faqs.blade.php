@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('meta_tags')
-<title>Food Delivery Help & Customer Support | Gofeast FAQs</title>
-<meta name="description" content="Got questions about your food order, delivery coverage, payment options, or refund policies? Find instant answers on the Gofeast FAQ page. ">
+<title>Food Delivery Help & Customer Support | GoFeast FAQs</title>
+<meta name="description" content="Got questions about your food order, delivery coverage, payment options, or refund policies? Find instant answers on the GoFeast FAQ page. ">
 @endsection
 @section('content')
 <section class="wrapper bg-light">

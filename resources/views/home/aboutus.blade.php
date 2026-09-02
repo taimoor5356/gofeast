@@ -2,11 +2,11 @@
 @section('meta_tags')
     <!-- Meta Title -->
 
-    <title>About Gofeast | Fast & Local Food Delivery Service </title>
+    <title>About GoFeast | Fast & Local Food Delivery Service </title>
 
     <!-- Meta Description -->
 
-    <meta name="description" content="Discover Gofeast, Lahore's trusted food delivery platform. We bring your favorite local restaurants, hot meals and exclusive deals straight to your doorstep fast.">
+    <meta name="description" content="Discover GoFeast, Lahore's trusted food delivery platform. We bring your favorite local restaurants, hot meals and exclusive deals straight to your doorstep fast.">
 
     <!-- Meta Keywords -->
 
@@ -18,9 +18,9 @@
 
     <!-- Open Graph Tags -->
 
-    <meta property="og:title" content="About Gofeast | Fast & Local Food Delivery Service ">
+    <meta property="og:title" content="About GoFeast | Fast & Local Food Delivery Service ">
 
-    <meta property="og:description" content="Discover Gofeast, Lahore's trusted food delivery platform. We bring your favorite local restaurants, hot meals and exclusive deals straight to your doorstep fast.">
+    <meta property="og:description" content="Discover GoFeast, Lahore's trusted food delivery platform. We bring your favorite local restaurants, hot meals and exclusive deals straight to your doorstep fast.">
 
     <meta property="og:url" content="https://www.gofeast.pk/about-us">
 
@@ -32,9 +32,9 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="About Gofeast | Fast & Local Food Delivery Service ">
+    <meta name="twitter:title" content="About GoFeast | Fast & Local Food Delivery Service ">
 
-    <meta name="twitter:description" content="Discover Gofeast, Lahore's trusted food delivery platform. We bring your favorite local restaurants, hot meals and exclusive deals straight to your doorstep fast.">
+    <meta name="twitter:description" content="Discover GoFeast, Lahore's trusted food delivery platform. We bring your favorite local restaurants, hot meals and exclusive deals straight to your doorstep fast.">
 
     <meta name="twitter:image" content="https://www.gofeast.pk/assets/images/about-us-banner.jpg">
 @endsection

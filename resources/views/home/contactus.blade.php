@@ -3,13 +3,13 @@
 
 <!-- Meta Title -->
 
-<title>Customer Support & Partner Inquiries | Contact Us Gofeast </title>
+<title>Customer Support & Partner Inquiries | Contact Us GoFeast </title>
 
 
 
 <!-- Meta Description -->
 
-<meta name="description" content="Need help with an order or looking to partner your restaurant with Gofeast? Contact our 24/7 customer support team in Lahore today. ">
+<meta name="description" content="Need help with an order or looking to partner your restaurant with GoFeast? Contact our 24/7 customer support team in Lahore today. ">
 
 
 
@@ -27,9 +27,9 @@
 
 <!-- Open Graph Tags -->
 
-<meta property="og:title" content="Customer Support & Partner Inquiries | Contact Us Gofeast">
+<meta property="og:title" content="Customer Support & Partner Inquiries | Contact Us GoFeast">
 
-<meta property="og:description" content="Need help with an order or looking to partner your restaurant with Gofeast? Contact our 24/7 customer support team in Lahore today. ">
+<meta property="og:description" content="Need help with an order or looking to partner your restaurant with GoFeast? Contact our 24/7 customer support team in Lahore today. ">
 
 <meta property="og:url" content="https://www.gofeast.pk/contact-us">
 
@@ -43,9 +43,9 @@
 
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="twitter:title" content="Customer Support & Partner Inquiries | Contact Us Gofeast">
+<meta name="twitter:title" content="Customer Support & Partner Inquiries | Contact Us GoFeast">
 
-<meta name="twitter:description" content="Need help with an order or looking to partner your restaurant with Gofeast? Contact our 24/7 customer support team in Lahore today. ">
+<meta name="twitter:description" content="Need help with an order or looking to partner your restaurant with GoFeast? Contact our 24/7 customer support team in Lahore today. ">
 
 <meta name="twitter:image" content="https://www.gofeast.pk/assets/images/contact-us-banner.jpg">
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('meta_tags')
-<title>Best Food & Restaurant Guides in Lahore | Gofeast Blog</title>
-<meta name="description" content="Read expert food recommendations, local eatery reviews and food delivery guides across Lahore. Stay updated with the latest culinary trends on Gofeast. ">
+<title>Best Food & Restaurant Guides in Lahore | GoFeast Blog</title>
+<meta name="description" content="Read expert food recommendations, local eatery reviews and food delivery guides across Lahore. Stay updated with the latest culinary trends on GoFeast. ">
 @endsection
 @section('content')
 <section class="wrapper bg-soft-primary">
