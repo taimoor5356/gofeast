@@ -5,6 +5,7 @@
 @elseif (!empty($delivery_meta_tags))
 {!! $delivery_meta_tags !!}
 @endif
+
 <title>Top Restaurants in Lahore | Order Delivery on Gofeast</title>
 <meta name="description" content="Top restaurants and local cafes in Bahria Town, Lahore on Gofeast. Check updated menus, prices, and special deals for fast delivery to your home or office! ">
 

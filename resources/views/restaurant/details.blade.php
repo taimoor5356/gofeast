@@ -78,4 +78,59 @@
     </div>
 </section>
 
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 6000;">
+    <div id="menuUpdateToast" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="uil uil-check-circle me-1"></i> This menu has been updated. Refreshing…
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+@endsection
+
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var checkUrl = @json(route('restaurant.check-updates', $restaurant_slug));
+        var pollInterval = 20000;
+        var lastSignature = null;
+        var stopped = false;
+
+        function showUpdateToastAndReload() {
+            stopped = true;
+            var toastEl = document.getElementById('menuUpdateToast');
+            if (toastEl && window.bootstrap && window.bootstrap.Toast) {
+                var toast = new bootstrap.Toast(toastEl, { autohide: false });
+                toast.show();
+            }
+            setTimeout(function () {
+                window.location.reload();
+            }, 2500);
+        }
+
+        function poll() {
+            if (stopped || document.hidden) return;
+            fetch(checkUrl, { headers: { 'Accept': 'application/json' } })
+                .then(function (res) { return res.json(); })
+                .then(function (data) {
+                    if (!data.signature) return;
+                    if (lastSignature === null) {
+                        lastSignature = data.signature;
+                        return;
+                    }
+                    if (data.signature !== lastSignature) {
+                        showUpdateToastAndReload();
+                    }
+                })
+                .catch(function () {});
+        }
+
+        poll();
+        var timer = setInterval(poll, pollInterval);
+        window.addEventListener('beforeunload', function () { clearInterval(timer); });
+    });
+</script>
 @endsection

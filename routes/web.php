@@ -40,6 +40,7 @@ Route::get('/site-map.xml', function () {
 
 Route::get('restaurants', [RestaurantController::class, 'index'])->name('restaurants');
 Route::get('restaurants/{pretty_name?}', [RestaurantController::class, 'restaurantDetails'])->name('restaurant.details');
+Route::get('restaurants/{pretty_name}/check-updates', [RestaurantController::class, 'checkItemUpdates'])->name('restaurant.check-updates');
 Route::get('delivery', [RestaurantController::class, 'delivery'])->name('restaurant.delivery');
 Route::get('pickup', [RestaurantController::class, 'pickup'])->name('restaurant.pickup');
 Route::get('home-chef', [RestaurantController::class, 'homeChef'])->name('restaurant.homechef');

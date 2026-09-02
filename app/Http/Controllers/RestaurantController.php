@@ -110,9 +110,37 @@ class RestaurantController extends Controller
         $data['restaurant'] = $restaurant;
         $data['restaurantItems'] = $paginatedItems;
         $data['pretty_name'] = $restaurant['name'];
+        $data['restaurant_slug'] = $restaurant['pretty_name'] ?? $prettyName;
         $data['schema_code'] = $restaurant['schema_code'];
-        
+
         return view('restaurant.details', $data);
+    }
+
+    /**
+     * Lightweight polling endpoint used by the restaurant details page to
+     * detect when a vendor has changed the menu, so the page can notify and reload.
+     */
+    public function checkItemUpdates($prettyName)
+    {
+        if (empty($prettyName)) {
+            return response()->json(['signature' => null], 404);
+        }
+
+        $url = "https://dashboard.gofeast.io/api/v1/get-store-items/" . urlencode($prettyName);
+        $response = Http::get($url);
+        $jsonResponse = $response->json();
+        $restaurant = $jsonResponse['restaurant'] ?? [];
+        $items = $jsonResponse['items'] ?? [];
+
+        $itemSignatures = collect($items)
+            ->map(fn ($item) => ($item['id'] ?? '') . ':' . ($item['updated_at'] ?? ''))
+            ->sort()
+            ->values()
+            ->implode(',');
+
+        $signature = md5(($restaurant['updated_at'] ?? '') . '|' . count($items) . '|' . $itemSignatures);
+
+        return response()->json(['signature' => $signature]);
     }
 
     public function delivery()
