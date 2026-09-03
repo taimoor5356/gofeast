@@ -280,7 +280,12 @@
     </style>
 
     @yield('styles')
-
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HYW0PJPL6">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-6HYW0PJPL6'); 
+    </script>
     <!-- Meta Pixel Code -->
     <script>
         !function(f, b, e, v, n, t, s) {
