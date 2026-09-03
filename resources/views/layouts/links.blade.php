@@ -1,25 +1,10 @@
-<!-- Global site tag (gtag.js) - Google Ads: 723669201 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-723669201"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-723669201');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130478297-4"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-130478297-4');
-</script>
+<!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HYW0PJPL6">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-6HYW0PJPL6'); 
+    </script>
+<!-- Meta Pixel Code -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="GoFeast">
