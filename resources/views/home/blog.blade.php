@@ -13,7 +13,7 @@
             </div>
             <!-- /column -->
         </div>
-        <div class="row">
+        {{--<div class="row">
             <div class="col-lg-12 mx-auto">
                 <div class="blog grid grid-view">
                     <div class="row isotope gx-md-8 gy-8 mb-8 justify-content-center">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <!-- /column -->
-        </div>
+        </div>--}}
         <!-- /.row -->
     </div>
     <!-- /.container -->
