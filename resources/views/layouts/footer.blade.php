@@ -7,7 +7,7 @@
                         <img class="mb-4" height="70px" width="150px" src="{{asset('assets/img/GoFeast White 1.png')}}" srcset="{{asset('assets/img/GoFeast White 1.png')}} 2x"
                             alt="" />
                     </a>
-                    <p class="mb-4">© 2024 GoFeast. <br class="d-none d-lg-block" />All rights reserved.</p>
+                    <p class="mb-4">© {{ date('Y') }} GoFeast. <br class="d-none d-lg-block" />All rights reserved.</p>
                     <!-- <p><span href="{{url('contact-us')}}" class="text">Suite 209 A, Commercial Sector C, Bahria Town Lahore</span></p> -->
                     <!-- <nav class="nav social ">
                             <a href="https://gomeattoken.medium.com/" target="_blank"><i
