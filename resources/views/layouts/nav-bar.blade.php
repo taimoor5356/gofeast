@@ -20,7 +20,10 @@
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($current_page == '/' || $current_page == 'pak' || $current_page == '') ? 'active' : ''; ?>" href="{{route('home')}}">Home</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link <?php echo ($current_page == 'restaurants' || $current_page == 'delivery' || $current_page == 'pickup') ? 'active' : ''; ?>" href="{{route('restaurants')}}">Restaurants</a>
+                </li>
+                {{--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle <?php echo ($current_page == 'restaurants' || $current_page == 'delivery' || $current_page == 'pickup') ? 'active' : ''; ?>" href="#">Restaurants</a>
                     <ul class="dropdown-menu bg-default">
                         <li class="nav-item">
@@ -33,10 +36,10 @@
                             <a class="dropdown-item <?php echo ($current_page == 'pickup') ? 'active' : ''; ?>" href="{{route('restaurant.pickup')}}">Pickup</a>
                         </li> -->
                     </ul>
-                </li>
-                <li class="nav-item">
+                </li>--}}
+                {{--<li class="nav-item">
                     <a class="nav-link <?php echo ($current_page == 'home-chef') ? 'active' : ''; ?>" href="{{route('restaurant.homechef')}}">Home Chef</a>
-                </li>
+                </li>--}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle <?php echo ($current_page == 'blog' || $current_page == 'article') ? 'active' : ''; ?>" href="#">Blog</a>
                     <ul class="dropdown-menu bg-default">
@@ -44,7 +47,7 @@
                             <a class="dropdown-item <?php echo ($current_page == 'blog') ? 'active' : ''; ?>" href="{{route('blog')}}">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item <?php echo ($current_page == 'article') ? 'active' : ''; ?>" href="{{route('article')}}">Article</a>
+                            <a class="dropdown-item <?php echo ($current_page == 'article') ? 'active' : ''; ?>" href="{{route('article')}}">Guide</a>
                         </li>
                     </ul>
                 </li>
