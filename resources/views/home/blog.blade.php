@@ -52,7 +52,7 @@
                                             <br> 
                                             • Featured Deals: Exclusive burger discount deals, combo meal offers. 
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -109,7 +109,7 @@
                                             <br> 
                                             • Featured Deals: Fried chicken bucket offers, discounted chicken wings.  
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -166,7 +166,7 @@
                                             <br> 
                                             • Featured Deals: BOGO pizza discounts, cheap food delivery Lahore. 
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -223,7 +223,7 @@
                                             <br> 
                                             • Featured Deals: Local food delivery vouchers, wrap meal combos.  
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -275,7 +275,7 @@
                                             <br> 
                                             • Featured Deals: Family meal platters, traditional food discounts.   
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -327,7 +327,7 @@
                                             <br> 
                                             • Featured Deals: Healthy food delivery, diet meal discounts. 
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -379,7 +379,7 @@
                                             <br> 
                                             • Featured Deals: Midnight food delivery, late night fast food. 
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -431,7 +431,7 @@
                                             <br> 
                                             • Featured Deals: Cafe meal deals, bakery order discounts. 
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -483,7 +483,7 @@
                                             <br> 
                                             • Featured Deals: Workplace food delivery, daily lunch bundles.  
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
@@ -535,7 +535,7 @@
                                             <br> 
                                             • Featured Deals: GoFeast promo codes, free delivery deals.  
                                                     
-                                            <a href="#" target="_blank">Annual Report</a>
+                                            
                                         </p>
                                     </div>
                                     <!-- /.post-content -->
