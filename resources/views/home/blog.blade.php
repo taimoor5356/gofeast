@@ -60,9 +60,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -117,9 +115,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -174,9 +170,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -231,9 +225,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -283,9 +275,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -335,9 +325,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -387,9 +375,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -439,9 +425,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -491,9 +475,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
@@ -543,9 +525,7 @@
                                 <!--/.card-body -->
                                 <div class="card-footer">
                                     <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date text-primary"><i
-                                                class="uil uil-calendar-alt"></i><span>16 Jan
-                                                2023</span></li>
+                                        
                                         <!-- <li class="post-comments"><a href="#"><i
                                                             class="uil uil-comment"></i>4</a></li>
                                                 <li class="post-likes ms-auto"><a href="#"><i
