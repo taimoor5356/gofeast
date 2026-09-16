@@ -23,18 +23,18 @@ class HomeController extends Controller
     public function blog()
     {
         //
-        return view('home.blog', ['posts' => config('blog.posts')]);
+        return view('home.blog', ['post' => config('blog.post')]);
     }
 
     public function blogShow($slug)
     {
-        $posts = config('blog.posts');
+        $post = config('blog.post');
 
-        if (!isset($posts[$slug])) {
+        if ($slug !== $post['slug']) {
             abort(404);
         }
 
-        return view('home.blog-show', ['slug' => $slug, 'post' => $posts[$slug]]);
+        return view('home.blog-show', ['post' => $post]);
     }
     public function commingsoon()
     {
