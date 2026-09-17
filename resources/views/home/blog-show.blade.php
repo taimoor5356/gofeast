@@ -53,15 +53,194 @@
     .blog-chip strong {
         color: #222;
     }
+
+    .blog-article-card {
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .1);
+        padding: 32px 24px;
+        position: relative;
+        z-index: 2;
+        margin-top: -64px;
+    }
+
+    @media (min-width: 768px) {
+        .blog-article-card {
+            padding: 56px;
+            margin-top: -90px;
+        }
+    }
+
+    .blog-lead p {
+        font-size: 17px;
+        line-height: 1.85;
+        color: #555;
+    }
+
+    .blog-feature-group {
+        margin-top: 48px;
+    }
+
+    .blog-feature-group h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .blog-feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 24px;
+    }
+
+    @media (max-width: 767px) {
+        .blog-feature-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .blog-feature-item {
+        background: #faf3f3;
+        border-radius: 18px;
+        padding: 24px;
+    }
+
+    .blog-feature-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #b4333d;
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .blog-feature-item h4 {
+        font-size: 15.5px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #222;
+    }
+
+    .blog-feature-item p {
+        font-size: 13.5px;
+        color: #666;
+        margin-bottom: 0;
+        line-height: 1.6;
+    }
+
+    .blog-cta-box {
+        background: linear-gradient(135deg, #b4333d 0%, #8f2530 100%);
+        border-radius: 20px;
+        padding: 40px 24px;
+        color: #fff;
+        text-align: center;
+        margin-top: 48px;
+    }
+
+    .blog-cta-box p {
+        color: #fff;
+        opacity: .92;
+    }
+
+    .blog-cta-box .btn {
+        margin: 6px;
+    }
+
+    /* This theme's .btn-light / .btn-outline-light hover states render white
+       text on a white background (invisible). These replacements keep the
+       same look but with readable colors in every state. */
+    .btn-solid-white {
+        background-color: #fff;
+        color: #b4333d;
+        border: 0;
+    }
+
+    .btn-solid-white:hover {
+        background-color: #f3e9ea;
+        color: #b4333d;
+    }
+
+    .btn-outline-white-safe {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .btn-outline-white-safe:hover {
+        background-color: #fff;
+        color: #b4333d;
+        border-color: #fff;
+    }
+
+    .blog-deals-intro {
+        margin-top: 56px;
+        padding-top: 48px;
+        border-top: 1px solid #eee;
+    }
 </style>
 @endsection
 @section('content')
 
 <section class="wrapper blog-hero text-white">
-    <div class="container py-12 py-md-14 text-center">
+    <div class="container pt-10 pt-md-12 pb-16 pb-md-20 text-center">
         <div class="col-lg-9 mx-auto">
-            <h1 class="display-4 fw-bold text-white mb-4">{{ $post['title'] }}</h1>
-            <p class="fs-18 text-white opacity-90 mb-0">{{ $post['excerpt'] }}</p>
+            <h1 class="display-5 fw-bold text-white mb-0">{{ $post['title'] }}</h1>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper bg-light">
+    <div class="container">
+        <div class="col-lg-10 mx-auto">
+            <div class="blog-article-card">
+                <div class="blog-lead">
+                    @foreach($post['intro'] as $paragraph)
+                    <p>{{ $paragraph }}</p>
+                    @endforeach
+                </div>
+
+                @foreach($post['feature_groups'] as $group)
+                <div class="blog-feature-group">
+                    <h2>{{ $group['heading'] }}</h2>
+                    <p class="text-muted mb-0">{{ $group['intro'] }}</p>
+                    <div class="blog-feature-grid">
+                        @foreach($group['items'] as $item)
+                        <div class="blog-feature-item">
+                            <div class="blog-feature-icon"><i class="uil {{ $item['icon'] }}"></i></div>
+                            <h4>{{ $item['title'] }}</h4>
+                            <p>{{ $item['description'] }}</p>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                @endforeach
+
+                <div class="blog-feature-group">
+                    <h2>{{ $post['why_matters']['heading'] }}</h2>
+                    <p class="text-muted">{{ $post['why_matters']['paragraph'] }}</p>
+                    <div class="blog-cta-box">
+                        <p class="fs-16 mb-4">{{ $post['why_matters']['cta_text'] }}</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.gomeat.app" target="_blank" class="btn btn-solid-white rounded-pill px-4">
+                            <i class="uil uil-android"></i> Get it on Google Play
+                        </a>
+                        <a href="https://apps.apple.com/us/app/gomeat/id1441921154" target="_blank" class="btn btn-outline-white-safe rounded-pill px-4">
+                            <i class="uil uil-apple"></i> Download on the App Store
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-deals-intro">
+                    <h2 class="h3 mb-3">{{ $post['deals_intro']['heading'] }}</h2>
+                    @foreach($post['deals_intro']['paragraphs'] as $paragraph)
+                    <p class="text-muted">{{ $paragraph }}</p>
+                    @endforeach
+                    <p class="fw-bold mb-0">{{ $post['deals_intro']['closing'] }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -97,7 +276,7 @@
     <div class="container py-10">
         <h2 class="text-white mb-3">Hungry Yet?</h2>
         <p class="text-white opacity-90 mb-4">Order from your favorite Lahore restaurants now on GoFeast.</p>
-        <a href="{{ route('restaurants') }}" class="btn btn-light rounded-pill px-5">Order Now</a>
+        <a href="{{ route('restaurants') }}" class="btn btn-solid-white rounded-pill px-5">Order Now</a>
     </div>
 </section>
 
