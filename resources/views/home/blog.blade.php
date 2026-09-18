@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('meta_tags')
-<title>{{ $post['meta_title'] }}</title>
-<meta name="description" content="{{ $post['meta_description'] }}">
+<title>Food Guides, Deals & News in Lahore | GoFeast </title>
+<meta name="description" content="Discover top food spots, local dining guides, restaurant reviews and exclusive GoFeast discount deals on the official GoFeast Lahore blog.">
 @endsection
 @section('content')
 <section class="wrapper bg-light">
@@ -17,6 +17,7 @@
             <div class="col-lg-12 mx-auto">
                 <div class="blog grid grid-view">
                     <div class="row isotope gx-md-8 gy-8 mb-8 justify-content-center">
+                        @foreach($posts as $post)
                         <article class="item post col-md-6 col-lg-4">
                             <div class="card">
                                 <figure class="card-img-top overlay overlay-1 hover-scale">
@@ -49,6 +50,7 @@
                             </div>
                             <!-- /.card -->
                         </article>
+                        @endforeach
                     </div>
                     <!-- /.row -->
                 </div>

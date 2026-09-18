@@ -181,6 +181,29 @@
         padding-top: 48px;
         border-top: 1px solid #eee;
     }
+
+    .blog-link {
+        color: #b4333d;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: rgba(180, 51, 61, .35);
+        text-underline-offset: 2px;
+    }
+
+    .blog-link:hover {
+        color: #8f2530;
+        text-decoration-color: currentColor;
+    }
+
+    .blog-cta-box .blog-link {
+        color: #fff;
+        text-decoration-color: rgba(255, 255, 255, .5);
+    }
+
+    .blog-cta-box .blog-link:hover {
+        color: #fff;
+        text-decoration-color: #fff;
+    }
 </style>
 @endsection
 @section('content')
@@ -199,20 +222,22 @@
             <div class="blog-article-card">
                 <div class="blog-lead">
                     @foreach($post['intro'] as $paragraph)
-                    <p>{{ $paragraph }}</p>
+                    <p>{!! $paragraph !!}</p>
                     @endforeach
                 </div>
 
                 @foreach($post['feature_groups'] as $group)
                 <div class="blog-feature-group">
                     <h2>{{ $group['heading'] }}</h2>
+                    @if(!empty($group['intro']))
                     <p class="text-muted mb-0">{{ $group['intro'] }}</p>
+                    @endif
                     <div class="blog-feature-grid">
                         @foreach($group['items'] as $item)
                         <div class="blog-feature-item">
                             <div class="blog-feature-icon"><i class="uil {{ $item['icon'] }}"></i></div>
                             <h4>{{ $item['title'] }}</h4>
-                            <p>{{ $item['description'] }}</p>
+                            <p>{!! $item['description'] !!}</p>
                         </div>
                         @endforeach
                     </div>
@@ -221,9 +246,9 @@
 
                 <div class="blog-feature-group">
                     <h2>{{ $post['why_matters']['heading'] }}</h2>
-                    <p class="text-muted">{{ $post['why_matters']['paragraph'] }}</p>
+                    <p class="text-muted">{!! $post['why_matters']['paragraph'] !!}</p>
                     <div class="blog-cta-box">
-                        <p class="fs-16 mb-4">{{ $post['why_matters']['cta_text'] }}</p>
+                        <p class="fs-16 mb-4">{!! $post['why_matters']['cta_text'] !!}</p>
                         <a href="https://play.google.com/store/apps/details?id=com.gomeat.app" target="_blank" class="btn btn-solid-white rounded-pill px-4">
                             <i class="uil uil-android"></i> Get it on Google Play
                         </a>
@@ -231,8 +256,16 @@
                             <i class="uil uil-apple"></i> Download on the App Store
                         </a>
                     </div>
+                    @if(!empty($post['resource_links']))
+                    <p class="text-center mt-4 mb-0" style="font-size: 13px;">
+                        @foreach($post['resource_links'] as $link)
+                        <a href="{{ $link['url'] }}" target="_blank" class="blog-link">{{ $link['label'] }}</a>{{ !$loop->last ? ' · ' : '' }}
+                        @endforeach
+                    </p>
+                    @endif
                 </div>
 
+                @if(!empty($post['deals_intro']))
                 <div class="blog-deals-intro">
                     <h2 class="h3 mb-3">{{ $post['deals_intro']['heading'] }}</h2>
                     @foreach($post['deals_intro']['paragraphs'] as $paragraph)
@@ -240,11 +273,13 @@
                     @endforeach
                     <p class="fw-bold mb-0">{{ $post['deals_intro']['closing'] }}</p>
                 </div>
+                @endif
             </div>
         </div>
     </div>
 </section>
 
+@if(!empty($post['sections']))
 <section class="wrapper bg-light">
     <div class="container pt-10 pb-6">
         @foreach($post['sections'] as $i => $section)
@@ -271,12 +306,13 @@
         @endforeach
     </div>
 </section>
+@endif
 
 <section class="wrapper blog-hero text-white text-center">
     <div class="container py-10">
         <h2 class="text-white mb-3">Hungry Yet?</h2>
         <p class="text-white opacity-90 mb-4">Order from your favorite Lahore restaurants now on GoFeast.</p>
-        <a href="{{ route('restaurants') }}" class="btn btn-solid-white rounded-pill px-5">Order Now</a>
+        <a href="https://order.gofeast.io" class="btn btn-solid-white rounded-pill px-5">Order Now</a>
     </div>
 </section>
 
