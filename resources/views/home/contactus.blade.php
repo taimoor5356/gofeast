@@ -96,7 +96,7 @@
             </div>
             <!--/column -->
             <div class="col-lg-5">
-                <h2 class="display-4 mb-8">Need some help? Reach out to us</h2>
+                <h2 class="display-4 mb-8">Need some help? <br>Reach out to us</h2>
                 <div class="d-flex flex-row">
                     <div>
                         <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i>

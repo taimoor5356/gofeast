@@ -36,6 +36,111 @@ class HomeController extends Controller
 
         return view('home.blog-show', ['post' => $posts[$slug]]);
     }
+
+    /**
+     * Blog listing sourced from the dashboard API instead of the local config.
+     */
+    public function newBlogs()
+    {
+        $response = Http::get('https://dashboard.gofeast.io/api/v1/blogs');
+        $items = $this->extractBlogCollection($response->json());
+
+        $blogs = collect($items)
+            ->filter(fn ($blog) => !empty($blog['status']))
+            ->map(function ($blog) {
+                $paragraphs = $this->decodeBlogParagraphs($blog['paragraphs'] ?? null);
+
+                return [
+                    'slug' => $blog['slug'] ?? '',
+                    'title' => $blog['main_heading'] ?? '',
+                    'excerpt' => $blog['sub_heading'] ?? ($paragraphs[0] ?? ''),
+                    'image' => $this->resolveBlogImage($blog, 'card_banner'),
+                ];
+            })
+            ->filter(fn ($blog) => !empty($blog['slug']))
+            ->values();
+
+        return view('home.new_blogs', ['blogs' => $blogs]);
+    }
+
+    public function newBlogShow($slug)
+    {
+        $response = Http::get('https://dashboard.gofeast.io/api/v1/blog/' . urlencode($slug));
+        $blog = $this->extractBlogItem($response->json());
+
+        if (empty($blog) || empty($blog['status'])) {
+            abort(404);
+        }
+
+        $data = [
+            'slug' => $blog['slug'] ?? $slug,
+            'title' => $blog['main_heading'] ?? '',
+            'subtitle' => $blog['sub_heading'] ?? '',
+            'page_banner' => $this->resolveBlogImage($blog, 'page_banner'),
+            'other_image' => $this->resolveBlogImage($blog, 'other_image'),
+            'paragraphs' => $this->decodeBlogParagraphs($blog['paragraphs'] ?? null),
+            'footer' => $blog['footer'] ?? null,
+        ];
+
+        return view('home.new_blog-show', ['blog' => $data]);
+    }
+
+    private function extractBlogCollection($json)
+    {
+        if (!is_array($json)) {
+            return [];
+        }
+
+        if (isset($json['data']) && is_array($json['data'])) {
+            return $json['data'];
+        }
+
+        return $json;
+    }
+
+    private function extractBlogItem($json)
+    {
+        if (!is_array($json)) {
+            return null;
+        }
+
+        if (isset($json['data']) && is_array($json['data'])) {
+            return $json['data'];
+        }
+
+        return $json;
+    }
+
+    private function resolveBlogImage($blog, $field)
+    {
+        if (!empty($blog[$field . '_full_url'])) {
+            return $blog[$field . '_full_url'];
+        }
+
+        if (empty($blog[$field])) {
+            return null;
+        }
+
+        return 'https://dashboard.gofeast.io/storage/app/public/blog/' . $blog[$field];
+    }
+
+    private function decodeBlogParagraphs($paragraphs)
+    {
+        if (is_array($paragraphs)) {
+            return array_values($paragraphs);
+        }
+
+        if (is_string($paragraphs) && $paragraphs !== '') {
+            $decoded = json_decode($paragraphs, true);
+            if (is_array($decoded)) {
+                return array_values($decoded);
+            }
+            return [$paragraphs];
+        }
+
+        return [];
+    }
+
     public function commingsoon()
     {
         //

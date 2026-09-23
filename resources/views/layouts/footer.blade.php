@@ -7,6 +7,15 @@
                         <img class="mb-4" height="70px" width="150px" src="{{asset('assets/img/GoFeast White 1.png')}}" srcset="{{asset('assets/img/GoFeast White 1.png')}} 2x"
                             alt="" />
                     </a>
+                    <nav class="nav social mb-4">
+                        <a href="https://www.facebook.com/gofeast.pk" target="_blank"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a href="https://twitter.com/GoFeast" target="_blank"><i
+                                class="uil uil-twitter"></i></a>
+                        <a href="https://www.instagram.com/gofeast.pk" target="_blank"><i
+                                class="uil uil-instagram"></i></a>
+                    </nav>
+                    <!-- /.social -->
                     <p class="mb-4">© {{ date('Y') }} GoFeast. <br class="d-none d-lg-block" />All rights reserved.</p>
                     <!-- <p><span href="{{url('contact-us')}}" class="text">Suite 209 A, Commercial Sector C, Bahria Town Lahore</span></p> -->
                     <!-- <nav class="nav social ">

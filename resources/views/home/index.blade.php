@@ -2,7 +2,7 @@
 @section('meta_tags')
     <!-- Page Title -->
 
-    <title>GoFeast - Online Food & Grocery Delivery in Bahria Town Lahore</title>
+    <title>Online Food & Grocery Delivery in Bahria Town | GoFeast</title>
 
     <!-- Meta Description -->
 
@@ -226,6 +226,16 @@
                                 <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/2.jpg')}}" alt="Top Brand Product Image" loading="lazy">
                             </a>
                         </div> <!-- Bunty Sajji -->
+                        <div class="item px-5 d-flex justify-content-center">
+                            <a href="https://order.gofeast.io/store?id=3815&page=item" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="https://dashboard.gofeast.io/storage/app/public/store/2025-03-10-67ced58c75bd6.png" referrerpolicy="no-referrer" alt="McDonald's Bahria Town Lahore" loading="lazy">
+                            </a>
+                        </div> <!-- McDonald's -->
+                        <div class="item px-5 d-flex justify-content-center">
+                            <a href="https://order.gofeast.io/store?id=3814&page=item" target="_blank">
+                                <img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="https://dashboard.gofeast.io/storage/app/public/store/2026-06-23-6a3aa31d8365e.png" referrerpolicy="no-referrer" alt="KFC" loading="lazy">
+                            </a>
+                        </div> <!-- KFC -->
                         <!-- <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/4.jpg')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/5.png')}}" alt="" loading="lazy"></div>
                         <div class="item px-5"><img style="width:150px; height: 150px" class="rounded-circle border border-danger" src="{{asset('assets/img/photos/stores/6.jpg')}}" alt="" loading="lazy"></div>

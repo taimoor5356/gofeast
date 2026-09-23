@@ -3,19 +3,32 @@
 <title>Food Delivery Help & Customer Support | GoFeast FAQs</title>
 <meta name="description" content="Got questions about your food order, delivery coverage, payment options, or refund policies? Find instant answers on the GoFeast FAQ page. ">
 @endsection
+@section('styles')
+<style>
+    .faqs-tabs .nav-link {
+        transition: background-color .15s ease, color .15s ease, box-shadow .15s ease;
+    }
+
+    .faqs-tabs .nav-link.active {
+        background-color: #b4333d !important;
+        color: #fff !important;
+        box-shadow: 0 6px 16px rgba(180, 51, 61, .35) !important;
+    }
+
+    .faqs-tabs .nav-link.active i {
+        color: #fff !important;
+    }
+</style>
+@endsection
 @section('content')
 <section class="wrapper bg-light">
     <div class="container py-10 py-md-10">
         <h3 class="display-4 mb-3 text-center text-primary">FAQs</h3>
-        <p class="lead text-center mb-10 px-md-16 px-lg-0">If you don't see an answer to your question, you can
-            send us an email or reach out directly to our customer support team via call or live-chat. <br> <a
-                href="./contact-us"><span class="badge bg-primary rounded-pill">Contact us</span></a></p>
+        <h3 class="display-4 mb-3 text-center text-primary">GoFeast Services</h3>
 
         <div class="row">
             <div class="col-lg-12 mb-0">
-                <h3 class="display-4 mb-3 text-center text-primary">GoFeast Services</h3>
-
-                <ul class="nav nav-tabs nav-pills d-flex justify-content-center">
+                <ul class="nav nav-tabs nav-pills faqs-tabs d-flex justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="tab" href="#cutomer-tab">
                             <i class="uil uil-phone-volume pe-1"></i>
@@ -47,7 +60,7 @@
                 <div class="tab-content ">
                     <div class="tab-pane fade show active " id="cutomer-tab">
 
-                        <ul class="nav nav-tabs nav-pills d-flex justify-content-center">
+                        <ul class="nav nav-tabs nav-pills faqs-tabs d-flex justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="tab" href="#basic-tab">
                                     <i class="uil uil-phone-volume pe-1"></i>
@@ -798,7 +811,7 @@
                     <!--/.tab-pane -->
                     <div class="tab-pane fade" id="order-tab">
 
-                        <ul class="nav nav-tabs nav-pills d-flex justify-content-center">
+                        <ul class="nav nav-tabs nav-pills faqs-tabs d-flex justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="tab" href="#preorder-tab">
                                     <i class="uil uil-phone-volume pe-1"></i>
@@ -1050,6 +1063,10 @@
             <!--/column -->
         </div>
         <!--/.row -->
+
+        <p class="lead text-center mb-10 px-md-16 px-lg-0">If you don't see an answer to your question, you can
+            send us an email or reach out directly to our customer support team via call or live-chat. <br> <a
+                href="./contact-us"><span class="badge bg-primary rounded-pill">Contact us</span></a></p>
     </div>
     <!-- /.container -->
 </section>

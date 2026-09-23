@@ -40,8 +40,11 @@
                 {{--<li class="nav-item">
                     <a class="nav-link <?php echo ($current_page == 'home-chef') ? 'active' : ''; ?>" href="{{route('restaurant.homechef')}}">Home Chef</a>
                 </li>--}}
+                <li class="nav-item">
+                    <a class="nav-link <?php echo ($current_page == 'about-us') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('aboutus')}}">About Us</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'blog' || $current_page == 'article') ? 'active' : ''; ?>" href="#">Blog</a>
+                    <a class="nav-link dropdown-toggle <?php echo ($current_page == 'blog' || $current_page == 'article') ? 'active' : ''; ?>" href="#">Blogs</a>
                     <ul class="dropdown-menu bg-default">
                         <li class="nav-item">
                             <a class="dropdown-item <?php echo ($current_page == 'blog') ? 'active' : ''; ?>" href="{{route('blog')}}">Blog</a>
@@ -72,9 +75,6 @@
                             <a class="dropdown-item <?php echo ($current_page == 'contact-us') ? 'active' : ''; ?>" href="{{route('contactus')}}">Contact Us</a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'about-us') ? 'active border-bottom border-danger' : ''; ?>" href="{{route('aboutus')}}">About Us</a>
                 </li>
             </ul>
         </div>
