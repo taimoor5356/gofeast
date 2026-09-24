@@ -436,7 +436,7 @@
                             receiving such communications for transactional, operational, or informational purposes. You
                             understand that such messages may be sent using an automatic telephone dialing system. You
                             may unsubscribe from receiving text messages from GoFeast at any time. To revoke your
-                            consent to receiving SMS or MMS messages from GoFeast, please contact info@gofeast.pk for
+                            consent to receiving SMS or MMS messages from GoFeast, please contact <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a> for
                             unsubscribe procedures. Consumers placing orders through the Sites may receive two or more
                             order status messages from GoFeast about each order
                         </p>
@@ -767,7 +767,7 @@
                             receiving such communications for transactional, operational, or informational purposes. You
                             understand that such messages may be sent using an automatic telephone dialing system. You
                             may unsubscribe from receiving text messages from GoFeast at any time. To revoke your
-                            consent to receiving SMS or MMS messages from GoFeast, please contact info@gofeast.pk for
+                            consent to receiving SMS or MMS messages from GoFeast, please contact <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a> for
                             unsubscribe procedures. Consumers placing orders through the Sites may receive two or more
                             order status messages from GoFeast about each order
                         </p>

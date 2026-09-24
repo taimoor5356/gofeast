@@ -177,7 +177,7 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/privacy-policy/19";
         $data = Http::withoutVerifying()->get($url);
         $data = json_decode($data);
-        $data = $this->fixMailtoLinks($data);
+        $data = $this->normalizeEmailLinks($data);
         return view('home.privacypolicy', compact('data'));
     }
     public function refundpolicy()
@@ -186,7 +186,7 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/refund-policy/19";
         $data = Http::get($url);
         $data = json_decode($data);
-        $data = $this->fixMailtoLinks($data);
+        $data = $this->normalizeEmailLinks($data);
         return view('home.refundpolicy', compact('data'));
     }
     public function termsandconditions()
@@ -194,26 +194,78 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/terms-and-conditions/19";
         $data = Http::get($url);
         $data = json_decode($data);
-        $data = $this->fixMailtoLinks($data);
+        $data = $this->normalizeEmailLinks($data);
         return view('home.termsandconditions', compact('data'));
     }
 
     /**
-     * The dashboard-sourced policy pages link "info@gofeast.pk" without
-     * target="_blank", so clicking it navigates the current tab to a
-     * mailto: URI and leaves a blank page when no mail client is set up.
+     * The dashboard-sourced policy pages have inconsistent email markup:
+     * mailto links missing target="_blank" (opens a blank tab when no mail
+     * client is configured), mailto links whose visible text doesn't match
+     * the address (e.g. just "c"), and bare "info@gofeast.pk"/"cs@gofeast.pk"
+     * mentions that aren't links at all. This normalizes all of the above so
+     * every @gofeast.pk email is a proper, correctly-labelled mailto link.
      */
-    private function fixMailtoLinks($html)
+    private function normalizeEmailLinks($html)
     {
-        if (!is_string($html)) {
+        if (!is_string($html) || trim($html) === '') {
             return $html;
         }
 
-        return str_replace(
-            'href="mailto:info@gofeast.pk"',
-            'href="mailto:info@gofeast.pk" target="_blank"',
-            $html
+        $doc = new \DOMDocument();
+        libxml_use_internal_errors(true);
+        $doc->loadHTML(
+            '<?xml encoding="UTF-8"><div id="__root__">' . $html . '</div>',
+            LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD
         );
+        libxml_clear_errors();
+
+        $xpath = new \DOMXPath($doc);
+
+        // Fix existing mailto anchors: label them with their own address and open in a new tab.
+        foreach (iterator_to_array($xpath->query('//a[starts-with(@href, "mailto:")]')) as $anchor) {
+            $email = explode('?', substr($anchor->getAttribute('href'), strlen('mailto:')))[0];
+            if ($email === '') {
+                continue;
+            }
+            $anchor->setAttribute('target', '_blank');
+            while ($anchor->firstChild) {
+                $anchor->removeChild($anchor->firstChild);
+            }
+            $anchor->appendChild($doc->createTextNode($email));
+        }
+
+        // Wrap bare @gofeast.pk email mentions (not already inside a link) in their own mailto link.
+        $emailPattern = '/([a-zA-Z0-9._%+-]+@gofeast\.pk)/';
+        foreach (iterator_to_array($xpath->query('//text()[not(ancestor::a)]')) as $textNode) {
+            if (!preg_match($emailPattern, $textNode->nodeValue)) {
+                continue;
+            }
+
+            $fragment = $doc->createDocumentFragment();
+            foreach (preg_split($emailPattern, $textNode->nodeValue, -1, PREG_SPLIT_DELIM_CAPTURE) as $i => $part) {
+                if ($part === '') {
+                    continue;
+                }
+                if ($i % 2 === 1) {
+                    $a = $doc->createElement('a', $part);
+                    $a->setAttribute('href', 'mailto:' . $part);
+                    $a->setAttribute('target', '_blank');
+                    $fragment->appendChild($a);
+                } else {
+                    $fragment->appendChild($doc->createTextNode($part));
+                }
+            }
+            $textNode->parentNode->replaceChild($fragment, $textNode);
+        }
+
+        $root = $xpath->query('//div[@id="__root__"]')->item(0);
+        $result = '';
+        foreach ($root->childNodes as $child) {
+            $result .= $doc->saveHTML($child);
+        }
+
+        return $result;
     }
     public function termsofuse()
     {
