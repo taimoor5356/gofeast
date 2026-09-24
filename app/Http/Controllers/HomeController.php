@@ -46,7 +46,6 @@ class HomeController extends Controller
         $items = $this->extractBlogCollection($response->json());
 
         $blogs = collect($items)
-            ->filter(fn ($blog) => !empty($blog['status']))
             ->map(function ($blog) {
                 $paragraphs = $this->decodeBlogParagraphs($blog['paragraphs'] ?? null);
 
@@ -65,10 +64,10 @@ class HomeController extends Controller
 
     public function newBlogShow($slug)
     {
-        $response = Http::get('https://dashboard.gofeast.io/api/v1/blog/' . urlencode($slug));
+        $response = Http::get('https://dashboard.gofeast.io/api/v1/blogs/' . urlencode($slug));
         $blog = $this->extractBlogItem($response->json());
 
-        if (empty($blog) || empty($blog['status'])) {
+        if (empty($blog) || empty($blog['slug'])) {
             abort(404);
         }
 
