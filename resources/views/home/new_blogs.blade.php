@@ -1,0 +1,70 @@
+@extends('layouts.app')
+@section('meta_tags')
+<title>Food Guides, Deals & News in Lahore | GoFeast </title>
+<meta name="description" content="Discover top food spots, local dining guides, restaurant reviews and exclusive GoFeast discount deals on the official GoFeast Lahore blog.">
+@endsection
+@section('content')
+<section class="wrapper bg-light">
+    <div class="container py-10 py-md-10">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
+                <h3 class="display-4 pb-5 text-primary">Blogs
+                </h3>
+            </div>
+            <!-- /column -->
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="blog grid grid-view">
+                    <div class="row isotope gx-md-8 gy-8 mb-8 justify-content-center">
+                        @forelse($blogs as $blog)
+                        <article class="item post col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure class="card-img-top overlay overlay-1 hover-scale">
+                                    <a href="{{ route('new.blog.show', $blog['slug']) }}">
+                                        @if(!empty($blog['image']))
+                                        <img src="{{ $blog['image'] }}" referrerpolicy="no-referrer"
+                                            alt="{{ $blog['title'] }}" />
+                                        @endif
+                                    </a>
+                                    <figcaption>
+                                        <h5 class="from-top mb-0">Read More</h5>
+                                    </figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <div class="post-header">
+                                        <!-- /.post-category -->
+                                        <h2 class="post-title h3 mt-1 mb-3">
+                                            <a href="{{ route('new.blog.show', $blog['slug']) }}" class="link-dark">
+                                                {{ $blog['title'] }}
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <!-- /.post-header -->
+                                    <div class="post-content">
+                                        <p>
+                                            {{ $blog['excerpt'] }}
+                                        </p>
+                                    </div>
+                                    <!-- /.post-content -->
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </article>
+                        @empty
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4 text-center">
+                            <h6>No blogs available</h6>
+                        </div>
+                        @endforelse
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+            <!-- /column -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+@endsection

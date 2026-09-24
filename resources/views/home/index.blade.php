@@ -323,6 +323,60 @@
 </section>
 <!-- /section -->
 
+<div class="modal fade" id="promoPopupModal" tabindex="-1" aria-labelledby="promoPopupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-transparent position-relative">
+            <button type="button" class="promo-popup-close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="uil uil-times"></i>
+            </button>
+            <span id="promoPopupCountdown" class="promo-popup-countdown">5</span>
+            <img src="{{ asset('assets/img/photos/banners/marketing_popup.jpg') }}" class="img-fluid rounded-4 w-100" alt="GoFeast Promotion">
+        </div>
+    </div>
+</div>
+
+<style>
+    .promo-popup-close {
+        position: absolute;
+        top: -14px;
+        right: -14px;
+        z-index: 10;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 0;
+        background-color: #b4333d;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+        cursor: pointer;
+    }
+
+    .promo-popup-close:hover {
+        background-color: #8f2530;
+    }
+
+    .promo-popup-countdown {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .55);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 700;
+    }
+</style>
+
 @endsection
 
 @section('scripts')
@@ -361,6 +415,38 @@
         carousel.addEventListener('translated.owl.carousel', function() {
             carousel.querySelector('.owl-item.active').style.animation = 'move-right 0.3s ease-in-out';
         });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var modalEl = document.getElementById('promoPopupModal');
+        if (!modalEl || !window.bootstrap) return;
+
+        var promoModal = new bootstrap.Modal(modalEl);
+        var countdownEl = document.getElementById('promoPopupCountdown');
+        var seconds = 5;
+        var timer = null;
+
+        function tick() {
+            seconds -= 1;
+            if (seconds <= 0) {
+                clearInterval(timer);
+                promoModal.hide();
+                return;
+            }
+            countdownEl.textContent = seconds;
+        }
+
+        modalEl.addEventListener('shown.bs.modal', function () {
+            seconds = 5;
+            countdownEl.textContent = seconds;
+            timer = setInterval(tick, 1000);
+        });
+
+        modalEl.addEventListener('hide.bs.modal', function () {
+            clearInterval(timer);
+        });
+
+        promoModal.show();
     });
 </script>
 @endsection
