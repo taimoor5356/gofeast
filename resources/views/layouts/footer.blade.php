@@ -8,7 +8,7 @@
                             alt="" />
                     </a>
                     <nav class="nav social mb-4">
-                        <a href="https://www.facebook.com/gofeast.pk" target="_blank"><i
+                        <a href="https://www.facebook.com/gofeast.pak" target="_blank"><i
                                 class="uil uil-facebook-f"></i></a>
                         <a href="https://twitter.com/GoFeast" target="_blank"><i
                                 class="uil uil-twitter"></i></a>
@@ -51,7 +51,7 @@
                     <ul class="list-unstyled text-reset mb-0">
                         <!-- <li><a href="./blog">Blogs</a></li> -->
                         <li><a href="{{url('contact-us')}}">Customer Support</a></li>
-                        <li><a href="https://www.facebook.com/gofeast.pk">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/gofeast.pak">Facebook</a></li>
                         <li><a href="https://www.instagram.com/gofeast.pk">Instagram</a></li>
                         <li><a href="mailto:cs@gofeast.pk" class="text-white">cs@gofeast.pk</a></li>
                         <!-- <li><a href="mailto:cs@gofeast.pk" class="text-white">cs@gofeast.pk</a></li>
