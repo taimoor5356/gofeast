@@ -111,6 +111,16 @@
     .fade-in-right {
         animation: fadeInRight 1.5s;
     }
+
+    /* The red top-bar search dropdown uses z-index: 3000 (see app.blade.php)
+       to sit above the main navbar; push the promo popup above that too. */
+    #promoPopupModal {
+        z-index: 4000;
+    }
+
+    .modal-backdrop {
+        z-index: 3900;
+    }
 </style>
 @endsection
 @section('content')
