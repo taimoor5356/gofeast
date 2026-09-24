@@ -85,7 +85,7 @@
 <p><strong>Note:</strong> GoDriver Tips are <strong>not refundable</strong> once the Order has been delivered by the GoDriver.</p>
 
 <h2>Contact GoFeast Support</h2>
-<p>If you have any questions regarding this Agreement, please visit our <a href="/contact-us">“Contact Us”</a> page for answers and our contact information or email us at <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>.</p>
+<p>If you have any questions regarding this Agreement, please visit our <a href="/contact-us">“Contact Us”</a> page for answers and our contact information or email us at <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>.</p>
 
                                         @endif
                                     </div>

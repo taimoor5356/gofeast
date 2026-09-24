@@ -906,7 +906,7 @@
                                     you may reject any such change by providing GoFeast written notice of such rejection by mail or
                                     hand delivery to: GoFeast, Attn: Dispute Resolutions, 9237 Washington Road,
                                     Morton Grove, IL 60053, or by email from the email address associated with your account to:
-                                    <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>, within 30 days of the date such change became effective, as indicated in the
+                                    <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>, within 30 days of the date such change became effective, as indicated in the
                                     "Effective" date above. In order to be effective, the notice must include your full name and clearly
                                     indicate your intent to reject changes to this "Dispute Resolution" section. By rejecting changes,
                                     you are agreeing that you will arbitrate any dispute between you and GoFeast in accordance with
@@ -934,7 +934,7 @@
                         <h2 class="h2 mb-4">CONTACT</h2>
                         <p style="text-align:justify;">
                             If you have any questions regarding this Agreement, please visit our <a href="https://gofeast.pk/contact-us" target="_blank">“Contact Us”</a> page for
-                            answers and our contact information or at <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>
+                            answers and our contact information or at <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>
                         </p>
                       </div>
                       <!-- /.post-content -->

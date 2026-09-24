@@ -190,7 +190,7 @@
 
                                         <h2>11. Children’s Privacy</h2>
                                         <p>
-                                            The Sites are not directed to children under 13 years of age. If you believe we may have collected such information, contact us at <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>.
+                                            The Sites are not directed to children under 13 years of age. If you believe we may have collected such information, contact us at <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>.
                                         </p>
 
                                         <h2>12. Disclaimer</h2>
@@ -211,7 +211,7 @@
 
                                         <h2>15. Contacting Us</h2>
                                         <div class="contact">
-                                            <p><strong>Email:</strong> <a href="mailto:info@gofeast.pk">info@gofeast.pk</a></p>
+                                            <p><strong>Email:</strong> <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a></p>
                                             <p><strong>Address:</strong> GoFeast, Suite 209 A, Commercial Sector C, Bahria Town, Lahore</p>
                                             <div class="note">
                                                 ⚠️ Important: Email communications are not always secure. Please do not include credit card or sensitive data.

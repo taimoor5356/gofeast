@@ -165,7 +165,7 @@
 
                                         <section>
                                             <h2>Communications & Text Messages</h2>
-                                            <p>By providing your number, you agree to receive SMS/MMS for order updates. You can unsubscribe anytime via <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>.</p>
+                                            <p>By providing your number, you agree to receive SMS/MMS for order updates. You can unsubscribe anytime via <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>.</p>
                                         </section>
 
                                         <section>
@@ -211,7 +211,7 @@
 
                                         <section>
                                             <h2>Contact Us</h2>
-                                            <p>For questions, please visit our <a href="/contact">Contact Us</a> page or email <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>.</p>
+                                            <p>For questions, please visit our <a href="/contact">Contact Us</a> page or email <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>.</p>
                                         </section>
                                         @endif
                                     </div>

@@ -163,7 +163,7 @@
     <p>We retain Personal Information as long as necessary to fulfill this policy’s purposes and comply with legal obligations.</p>
 
     <h2>Children’s Privacy</h2>
-    <p>Our Sites are not intended for children under 13. If you believe a child has provided data, email us at <a href="mailto:info@gofeast.pk">info@gofeast.pk</a>.</p>
+    <p>Our Sites are not intended for children under 13. If you believe a child has provided data, email us at <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a>.</p>
 
     <h2>Disclaimer</h2>
     <p>Your use of the Sites is at your own risk. By using them, you consent to the transfer of your data to countries with different privacy laws.</p>
@@ -174,7 +174,7 @@
     <h2>Contacting Us</h2>
     <p>If you have questions about this Privacy Policy, contact us:</p>
     <ul>
-        <li><strong>Email:</strong> <a href="mailto:info@gofeast.pk">info@gofeast.pk</a></li>
+        <li><strong>Email:</strong> <a href="mailto:info@gofeast.pk" target="_blank">info@gofeast.pk</a></li>
         <li><strong>Address:</strong><br>
             GoFeast Pvt Ltd.<br>
             Suite 209 A, Commercial Sector C,<br>

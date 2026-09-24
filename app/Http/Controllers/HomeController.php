@@ -177,6 +177,7 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/privacy-policy/19";
         $data = Http::withoutVerifying()->get($url);
         $data = json_decode($data);
+        $data = $this->fixMailtoLinks($data);
         return view('home.privacypolicy', compact('data'));
     }
     public function refundpolicy()
@@ -185,6 +186,7 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/refund-policy/19";
         $data = Http::get($url);
         $data = json_decode($data);
+        $data = $this->fixMailtoLinks($data);
         return view('home.refundpolicy', compact('data'));
     }
     public function termsandconditions()
@@ -192,7 +194,26 @@ class HomeController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/terms-and-conditions/19";
         $data = Http::get($url);
         $data = json_decode($data);
+        $data = $this->fixMailtoLinks($data);
         return view('home.termsandconditions', compact('data'));
+    }
+
+    /**
+     * The dashboard-sourced policy pages link "info@gofeast.pk" without
+     * target="_blank", so clicking it navigates the current tab to a
+     * mailto: URI and leaves a blank page when no mail client is set up.
+     */
+    private function fixMailtoLinks($html)
+    {
+        if (!is_string($html)) {
+            return $html;
+        }
+
+        return str_replace(
+            'href="mailto:info@gofeast.pk"',
+            'href="mailto:info@gofeast.pk" target="_blank"',
+            $html
+        );
     }
     public function termsofuse()
     {
