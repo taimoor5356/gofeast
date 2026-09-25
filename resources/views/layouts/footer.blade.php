@@ -10,10 +10,10 @@
                     <nav class="nav social mb-4">
                         <a href="https://www.facebook.com/gofeast.pak" target="_blank"><i
                                 class="uil uil-facebook-f"></i></a>
-                        <a href="https://twitter.com/GoFeast" target="_blank"><i
-                                class="uil uil-twitter"></i></a>
                         <a href="https://www.instagram.com/gofeast.pk" target="_blank"><i
                                 class="uil uil-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/gofeast/" target="_blank"><i
+                                class="uil uil-linkedin"></i></a>
                     </nav>
                     <!-- /.social -->
                     <p class="mb-4">© {{ date('Y') }} GoFeast. <br class="d-none d-lg-block" />All rights reserved.</p>
@@ -53,6 +53,7 @@
                         <li><a href="{{url('contact-us')}}">Customer Support</a></li>
                         <li><a href="https://www.facebook.com/gofeast.pak">Facebook</a></li>
                         <li><a href="https://www.instagram.com/gofeast.pk">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/gofeast/">LinkedIn</a></li>
                         <li><a href="mailto:cs@gofeast.pk" class="text-white">cs@gofeast.pk</a></li>
                         <!-- <li><a href="mailto:cs@gofeast.pk" class="text-white">cs@gofeast.pk</a></li>
                             <li><a href="tel:19085740454" class="text-white">+92 337-7777-761</a></li> -->
