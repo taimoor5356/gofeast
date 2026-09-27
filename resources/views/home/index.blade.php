@@ -340,7 +340,7 @@
                 <i class="uil uil-times"></i>
             </button>
             <span id="promoPopupCountdown" class="promo-popup-countdown">5</span>
-            <img src="{{ asset('assets/img/photos/banners/marketing_popup.jpg') }}" class="img-fluid rounded-4 w-100" alt="GoFeast Promotion">
+            <img src="{{ asset('assets/img/photos/banners/marketing_popup_two.jpg') }}" class="img-fluid rounded-4 w-100" alt="GoFeast Promotion">
         </div>
     </div>
 </div>
