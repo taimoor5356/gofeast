@@ -277,6 +277,15 @@
                 width: 340px;
             }
         }
+
+        /* The mobile sidebar lives inside .navbar (z-index 1020), which traps it
+           below .top-search-wrap (3000). Lift the navbar while the sidebar is
+           open; stays under the promo popup modal (3900/4000). */
+        @media (max-width: 991.98px) {
+            .navbar:has(.offcanvas-nav.open) {
+                z-index: 3500;
+            }
+        }
     </style>
 
     @yield('styles')
