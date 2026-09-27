@@ -148,6 +148,8 @@
 
     .blog-cta-box .btn {
         margin: 6px;
+        max-width: 100%;
+        white-space: normal;
     }
 
     /* This theme's .btn-light / .btn-outline-light hover states render white

@@ -282,8 +282,24 @@
            below .top-search-wrap (3000). Lift the navbar while the sidebar is
            open; stays under the promo popup modal (3900/4000). */
         @media (max-width: 991.98px) {
+            /* Safety net: nothing should make the page scroll sideways on
+               phones. `clip` (unlike `hidden`) doesn't create a scroll
+               container, so it won't break position: sticky. */
+            html,
+            body {
+                overflow-x: hidden;
+                overflow-x: clip;
+            }
+
             .navbar:has(.offcanvas-nav.open) {
                 z-index: 3500;
+            }
+
+            /* nav-bar.blade.php puts px-0/mx-0 on the sidebar for desktop,
+               which strips its left/right padding on mobile too. */
+            .offcanvas-nav {
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
             }
         }
     </style>

@@ -50,6 +50,19 @@
     }
 
     .restaurant-image {}
+
+    /* Restaurants without a pretty_name have no details page to open. */
+    .restaurant-card-disabled {
+        display: block;
+        height: 100%;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    /* !important beats the inline colors on the card's name/address. */
+    .restaurant-card-disabled p {
+        color: #b5b5b5 !important;
+    }
 </style>
 @endsection
 @section('content')
@@ -65,7 +78,11 @@
                 @foreach($restaurants as $restaurant)
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-4">
                     @if(is_array($restaurant) && !empty($restaurant['result_type']))
+                    @if($restaurant['result_type'] === 'store' && empty($restaurant['link']))
+                    <a class="restaurant-card-disabled" aria-disabled="true" tabindex="-1">
+                    @else
                     <a href="{{ $restaurant['link'] ?? '#' }}">
+                    @endif
                         <div class="d-flex flex-column justify-content-between align-items-center p-2"
                             style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                             <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
@@ -84,7 +101,12 @@
                         </div>
                     </a>
                     @else
-                    <a href="@if(!empty(!empty($restaurant->address) ? $restaurant->address : $restaurant['address'])) {{route('restaurant.details', [!empty($restaurant->pretty_name) ? $restaurant->pretty_name : $restaurant['pretty_name']])}} @else # @endif">
+                    @php $prettyName = data_get($restaurant, 'pretty_name'); @endphp
+                    @if(empty($prettyName))
+                    <a class="restaurant-card-disabled" aria-disabled="true" tabindex="-1">
+                    @else
+                    <a href="@if(!empty(!empty($restaurant->address) ? $restaurant->address : $restaurant['address'])) {{route('restaurant.details', [$prettyName])}} @else # @endif">
+                    @endif
                         <div class="d-flex flex-column justify-content-between align-items-center p-2"
                             style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 100%;">
                             <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
