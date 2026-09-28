@@ -5,7 +5,7 @@ return [
         'best-food-deals-lahore' => [
             'slug' => 'best-food-deals-lahore',
             'title' => 'What Makes GoFeast’s Food Delivery Speed and Tracking Superior?',
-            'image' => 'GoBlog.jpg',
+            'image' => 'new_banners/Banner1.jpg',
             'excerpt' => 'Ever ordered food online and spent half an hour staring at a static progress bar, wondering if your hot dinner is actually on its way or sitting cold on a counter?',
             'meta_title' => 'Food Guides, Deals & News in Lahore | GoFeast Blog',
             'meta_description' => 'Discover top food spots, local dining guides, restaurant reviews and exclusive GoFeast discount deals on the official GoFeast Lahore blog.',
@@ -67,7 +67,7 @@ return [
         'top-10-fast-food-restaurant-deals-gofeast' => [
             'slug' => 'top-10-fast-food-restaurant-deals-gofeast',
             'title' => 'Top 10 Fast Food & Local Restaurant Deals You Can Get on GoFeast',
-            'image' => 'GoBlog.jpg',
+            'image' => 'new_banners/Banner2.jpg',
             'excerpt' => 'Hot crispy fried chicken, a cheesy pizza deal, or a quick loaded burger wrap delivered straight to your doorstep — discover the best food delivery deals in Bahria Town Lahore.',
             'meta_title' => 'Top 10 Fast Food & Restaurant Deals in Lahore | GoFeast Blog',
             'meta_description' => 'Hot crispy fried chicken, a cheesy pizza deal, or a quick loaded burger wrap delivered straight to your doorstep — discover the best food delivery deals in Bahria Town Lahore.',
@@ -190,7 +190,7 @@ return [
         'common-mistakes-ordering-food-delivery-online' => [
             'slug' => 'common-mistakes-ordering-food-delivery-online',
             'title' => '9 Common Mistakes to Avoid When Ordering Food Delivery Online',
-            'image' => 'GoBlog.jpg',
+            'image' => 'new_banners/Banner3.jpg',
             'excerpt' => 'Missing a quick detail during checkout or choosing the wrong delivery slot can turn an easy meal into a cold, delayed disappointment — here are 9 mistakes to avoid on your next order.',
             'meta_title' => '9 Common Mistakes to Avoid When Ordering Food Delivery Online | GoFeast Blog',
             'meta_description' => 'Missing a quick detail during checkout or choosing the wrong delivery slot can turn an easy meal into a cold, delayed disappointment — here are 9 mistakes to avoid on your next order.',
