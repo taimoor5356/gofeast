@@ -116,21 +116,21 @@ return [
             'sections' => [
                 [
                     'title' => 'The Classic Smash Burger & Loaded Fries Combo',
-                    'image' => 'new_banners/Banner1.jpg',
+                    'image' => 'Banner7.jpg',
                     'description' => 'Nothing satisfies an afternoon craving quite like a juicy double patty smash burger paired with seasoned fries and a cold drink. Local burger spots on GoFeast offer specialized lunch bundles that save you up to 20% compared to ordering individual items.',
                     'best_for' => 'Quick lunch breaks & solo food cravings.',
                     'featured_deals' => 'Exclusive burger discount deals, combo meal offers.',
                 ],
                 [
                     'title' => 'Pizza Offers',
-                    'image' => 'new_banners/Banner2.jpg',
+                    'image' => 'Banner2.jpg',
                     'description' => 'Host a weekend hangout without overspending. GoFeast partners with popular pizzerias to bring you pizza deals in medium and large sizes. Choose your favorite toppings from Chicken Tikka to Pepperoni Feast and get double the food for a fraction of the cost.',
                     'best_for' => 'Game nights, movie marathons, and weekend gatherings.',
                     'featured_deals' => 'BOGO pizza discounts, cheap food delivery in Bahria Town Lahore.',
                 ],
                 [
                     'title' => 'Crispy Fried Chicken Buckets & Wings',
-                    'image' => 'new_banners/Banner3.jpg',
+                    'image' => 'Banner3.jpg',
                     'description' => 'When it comes to crispy fried chicken, more is always better. Look out for GoFeast’s value buckets featuring 6 to 12 pieces of spicy fried chicken, saucy chicken wings, dipped garlic mayo rolls, and dipping sauces.',
                     'best_for' => 'Sharing with family and friends.',
                     'featured_deals' => 'Fried chicken bucket offers, discounted chicken wings.',
