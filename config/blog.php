@@ -258,74 +258,74 @@ return [
             ],
         ],
 
-        // 'food-delivery-delay-tips' => [
-        //     'slug' => 'food-delivery-delay-tips',
-        //     'title' => 'What to Do If Your Food Delivery Is Delayed During Peak Hours',
-        //     'image' => 'GoBlog.jpg',
-        //     'excerpt' => 'Stuck waiting for late food during lunch or dinner rush? Use these essential food delivery delay tips to track orders, contact riders, and secure refunds.',
-        //     'meta_title' => 'What to Do If Your Food Delivery Is Delayed During Peak Hours',
-        //     'meta_description' => 'Stuck waiting for late food during lunch or dinner rush? Use these essential food delivery delay tips to track orders, contact riders, and secure refunds.',
-        //     'intro' => [
-        //         'Peak dining hours—typically lunch from 1:00 PM to 3:00 PM and dinner from 8:00 PM to 10:00 PM—are when kitchens face massive order backlogs and roads experience heavy traffic. When demand surges, even the best logistics networks can run into unexpected slowdowns.',
-        //         'Instead of waiting blindly or stressing over a late order, knowing how to handle delays strategically ensures your food arrives as quickly as possible and your money stays protected. Here is what to do when your food delivery is delayed during peak hours, along with practical food delivery delay tips for a smooth resolution.',
-        //     ],
-        //     'feature_groups' => [
-        //         [
-        //             'heading' => 'What to Do When Your Order Is Running Late',
-        //             'items' => [
-        //                 [
-        //                     'icon' => 'uil-location-point',
-        //                     'title' => 'Check the Live GPS Map Before Panicking',
-        //                     'description' => 'Before contacting support, open your delivery app (like GoFeast) and check the live GPS map. Distinguish between a kitchen delay and a rider transit delay: <strong>In Preparation:</strong> The restaurant is slammed with orders and hasn\'t handed the food to the rider yet. <strong>In Transit:</strong> The rider has picked up your food but may be navigating peak traffic or complex society routes.',
-        //                 ],
-        //                 [
-        //                     'icon' => 'uil-comment-alt-message',
-        //                     'title' => 'Reach Out Directly to the Rider via In-App Chat',
-        //                     'description' => 'If the rider has picked up your order but movement has stalled on the map, send a polite message through the app\'s chat or call feature. <strong>Pro Tip:</strong> Avoid calling while they are driving. A quick message like "Hi, just checking if you need help finding my location or street number" gives them space to respond safely without causing further delays.',
-        //                 ],
-        //                 [
-        //                     'icon' => 'uil-map-pin-alt',
-        //                     'title' => 'Send Precise Navigation & Gate Info Immediately',
-        //                     'description' => 'During peak hours, riders are under intense time pressure. A few lost minutes at a security gate or a missed street turn can stack up quickly. <strong>Pro Tip:</strong> Drop a precise pin, share your gate number, or mention prominent local landmarks in the chat to help the rider bypass navigation confusion.',
-        //                 ],
-        //                 [
-        //                     'icon' => 'uil-money-bill',
-        //                     'title' => 'Have the Exact Payment Ready (For COD Orders)',
-        //                     'description' => 'If you opted for Cash on Delivery, hunting for exact change or waiting for the rider to find change at your doorstep adds extra delay and stresses an already tight delivery schedule. <strong>Pro Tip:</strong> Keep exact cash ready before the rider arrives, or switch to instant in-app digital payments so the drop-off takes under 10 seconds.',
-        //                 ],
-        //                 [
-        //                     'icon' => 'uil-times-circle',
-        //                     'title' => 'Avoid Canceling the Order Mid-Transit',
-        //                     'description' => 'Canceling an order while the rider is already on their way usually results in full cancellation charges with zero food in hand, as the kitchen has already prepared the meal. <strong>Pro Tip:</strong> Only request a cancellation through customer support if the delay exceeds the estimated arrival time significantly (e.g., 40+ minutes past the original ETA window).',
-        //                 ],
-        //                 [
-        //                     'icon' => 'uil-headphones-alt',
-        //                     'title' => 'Contact Customer Support for Vouchers or Refunds',
-        //                     'description' => 'If a kitchen delay pushes your delivery far past reasonable limits, reach out to in-app customer support rather than taking it out on the delivery rider. <strong>Pro Tip:</strong> Be polite and straightforward. Express that the food took substantially longer than promised; support teams often issue delivery fee waivers, discount vouchers, or partial refunds for excessive delays.',
-        //                 ],
-        //             ],
-        //         ],
-        //         [
-        //             'heading' => 'How to Prevent Peak Hour Delays Next Time',
-        //             'items' => [
-        //                 [
-        //                     'icon' => 'uil-clock',
-        //                     'title' => 'Order 30 Minutes Early',
-        //                     'description' => 'Place your lunch or dinner orders before the main rush begins (e.g., order dinner at 7:15 PM instead of 8:30 PM).',
-        //                 ],
-        //                 [
-        //                     'icon' => 'uil-store',
-        //                     'title' => 'Choose Nearby Restaurants',
-        //                     'description' => 'Select neighborhood eateries to keep transit distances short and predictable during high-traffic hours.',
-        //                 ],
-        //             ],
-        //         ],
-        //     ],
-        //     'why_matters' => [
-        //         'heading' => 'Get Your Meal on Time, Even at Rush Hour',
-        //         'paragraph' => 'Applying these actionable food delivery delay tips will help you navigate order slowdowns smoothly, keep communication clear, and get your hot meal to your table with minimal hassle!',
-        //         'cta_text' => 'Track every order live and chat with your rider directly by downloading the GoFeast app today!',
-        //     ],
-        // ],
+        'food-delivery-delay-tips' => [
+            'slug' => 'food-delivery-delay-tips',
+            'title' => 'What to Do If Your Food Delivery Is Delayed During Peak Hours',
+            'image' => 'GoBlog.jpg',
+            'excerpt' => 'Stuck waiting for late food during lunch or dinner rush? Use these essential food delivery delay tips to track orders, contact riders, and secure refunds.',
+            'meta_title' => 'What to Do If Your Food Delivery Is Delayed During Peak Hours',
+            'meta_description' => 'Stuck waiting for late food during lunch or dinner rush? Use these essential food delivery delay tips to track orders, contact riders, and secure refunds.',
+            'intro' => [
+                'Peak dining hours typically lunch from 1:00 PM to 3:00 PM and dinner from 8:00 PM to 10:00 PM are when kitchens face massive order backlogs and roads experience heavy traffic. When demand surges, even the best logistics networks can run into unexpected slowdowns.',
+                'Instead of waiting blindly or stressing over a late order, knowing how to handle delays strategically ensures your food arrives as quickly as possible and your money stays protected. Here is what to do when your food delivery is delayed during peak hours, along with practical food delivery delay tips for a smooth resolution.',
+            ],
+            'feature_groups' => [
+                [
+                    'heading' => 'What to Do When Your Order Is Running Late',
+                    'items' => [
+                        [
+                            'icon' => 'uil-location-point',
+                            'title' => 'Check the Live GPS Map Before Panicking',
+                            'description' => 'Before contacting support, open your delivery app <a href="https://play.google.com/store/apps/details?id=com.gomeat.app&hl=en" target="_blank" class="blog-link">GoFeast</a> and check the live GPS map. Distinguish between a kitchen delay and a rider transit delay: <strong>In Preparation:</strong> The restaurant is slammed with orders and hasn\'t handed the food to the rider yet. <strong>In Transit:</strong> The rider has picked up your food but may be navigating peak traffic or complex society routes.',
+                        ],
+                        [
+                            'icon' => 'uil-comment-alt-message',
+                            'title' => 'Reach Out Directly to the Rider via In-App Chat',
+                            'description' => 'If the rider has picked up your order but movement has stalled on the map, send a polite message through the app\'s chat or call feature. <strong>Pro Tip:</strong> Avoid calling while they are driving. A quick message like "Hi, just checking if you need help finding my location or street number" gives them space to respond safely without causing further delays.',
+                        ],
+                        [
+                            'icon' => 'uil-map-pin-alt',
+                            'title' => 'Send Precise Navigation & Gate Info Immediately',
+                            'description' => 'During peak hours, riders are under intense time pressure. A few lost minutes at a security gate or a missed street turn can stack up quickly. <strong>Pro Tip:</strong> Drop a precise pin, share your gate number, or mention prominent local landmarks in the chat to help the rider bypass navigation confusion.',
+                        ],
+                        [
+                            'icon' => 'uil-money-bill',
+                            'title' => 'Have the Exact Payment Ready (For COD Orders)',
+                            'description' => 'If you opted for Cash on Delivery, hunting for exact change or waiting for the rider to find change at your doorstep adds extra delay and stresses an already tight delivery schedule. <strong>Pro Tip:</strong> Keep exact cash ready before the rider arrives, or switch to instant in-app digital payments so the drop-off takes under 10 seconds.',
+                        ],
+                        [
+                            'icon' => 'uil-times-circle',
+                            'title' => 'Avoid Canceling the Order Mid-Transit',
+                            'description' => 'Canceling an order while the rider is already on their way usually results in full cancellation charges with zero food in hand, as the kitchen has already prepared the meal. <strong>Pro Tip:</strong> Only request a cancellation through customer support if the delay exceeds the estimated arrival time significantly (e.g., 40+ minutes past the original ETA window).',
+                        ],
+                        [
+                            'icon' => 'uil-headphones-alt',
+                            'title' => 'Contact Customer Support for Vouchers or Refunds',
+                            'description' => 'If a kitchen delay pushes your delivery far past reasonable limits, reach out to in-app customer support rather than taking it out on the delivery rider. <strong>Pro Tip:</strong> Be polite and straightforward. Express that the food took substantially longer than promised; support teams often issue delivery fee waivers, discount vouchers, or partial refunds for excessive delays.',
+                        ],
+                    ],
+                ],
+                [
+                    'heading' => 'How to Prevent Peak Hour Delays Next Time',
+                    'items' => [
+                        [
+                            'icon' => 'uil-clock',
+                            'title' => 'Order 30 Minutes Early',
+                            'description' => 'Place your lunch or dinner orders before the main rush begins (e.g., order dinner at 7:15 PM instead of 8:30 PM).',
+                        ],
+                        [
+                            'icon' => 'uil-store',
+                            'title' => 'Choose Nearby Restaurants',
+                            'description' => 'Select neighborhood eateries to keep transit distances short and predictable during high-traffic hours.',
+                        ],
+                    ],
+                ],
+            ],
+            'why_matters' => [
+                'heading' => 'Get Your Meal on Time, Even at Rush Hour',
+                'paragraph' => 'Applying these actionable food delivery delay tips will help you navigate order slowdowns smoothly, keep communication clear and get your hot meal to your table with minimal hassle!',
+                'cta_text' => 'Track every order live and chat with your rider directly by downloading the GoFeast app today!',
+            ],
+        ],
     ],
 ];
