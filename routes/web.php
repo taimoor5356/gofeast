@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/lucky-draw', [HomeController::class, 'luckyDraw'])->name('luckydraw');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [HomeController::class, 'blogShow'])->name('blog.show');
 Route::get('/new-blogs', [HomeController::class, 'newBlogs'])->name('new.blogs');

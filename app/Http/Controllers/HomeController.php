@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
@@ -20,6 +21,16 @@ class HomeController extends Controller
         //
         return view('home.article');
     }
+    public function luckyDraw()
+    {
+        $endsAt = Carbon::parse(config('luckydraw.ends_at'), config('luckydraw.timezone'));
+
+        return view('home.lucky-draw', [
+            'endsAt' => $endsAt,
+            'secondsLeft' => max(0, $endsAt->getTimestamp() - now()->getTimestamp()),
+        ]);
+    }
+
     public function blog()
     {
         //

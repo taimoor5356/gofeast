@@ -5,9 +5,9 @@ return [
         'best-food-deals-lahore' => [
             'slug' => 'best-food-deals-lahore',
             'title' => 'What Makes GoFeast’s Food Delivery Speed and Tracking Superior?',
-            'image' => 'new_banners/Banner1.jpg',
+            'image' => 'new_banners/card_banner_1.jpg',
             'excerpt' => 'Ever ordered food online and spent half an hour staring at a static progress bar, wondering if your hot dinner is actually on its way or sitting cold on a counter?',
-            'meta_title' => 'Food Guides, Deals & News in Lahore | GoFeast Blog',
+            'meta_title' => 'What Makes GoFeast’s Food Delivery Speed and Tracking Superior? | GoFeast Blog',
             'meta_description' => 'Discover top food spots, local dining guides, restaurant reviews and exclusive GoFeast discount deals on the official GoFeast Lahore blog.',
             'intro' => [
                 'Ever ordered food online and spent half an hour staring at a static progress bar, wondering if your hot dinner is actually on its way or sitting cold on a counter? Delivery delays and vague status updates remain the biggest pain points in online food and grocery ordering.',
@@ -67,7 +67,7 @@ return [
         'top-10-fast-food-restaurant-deals-gofeast' => [
             'slug' => 'top-10-fast-food-restaurant-deals-gofeast',
             'title' => 'Top 10 Fast Food & Local Restaurant Deals You Can Get on GoFeast',
-            'image' => 'new_banners/Banner2.jpg',
+            'image' => 'new_banners/card_banner_2.jpg',
             'excerpt' => 'Hot crispy fried chicken, a cheesy pizza deal, or a quick loaded burger wrap delivered straight to your doorstep — discover the best food delivery deals in Bahria Town Lahore.',
             'meta_title' => 'Top 10 Fast Food & Restaurant Deals in Lahore | GoFeast Blog',
             'meta_description' => 'Hot crispy fried chicken, a cheesy pizza deal, or a quick loaded burger wrap delivered straight to your doorstep — discover the best food delivery deals in Bahria Town Lahore.',
@@ -116,7 +116,7 @@ return [
             'sections' => [
                 [
                     'title' => 'The Classic Smash Burger & Loaded Fries Combo',
-                    'image' => 'Banner7.jpg',
+                    'image' => 'Banner1.jpg',
                     'description' => 'Nothing satisfies an afternoon craving quite like a juicy double patty smash burger paired with seasoned fries and a cold drink. Local burger spots on GoFeast offer specialized lunch bundles that save you up to 20% compared to ordering individual items.',
                     'best_for' => 'Quick lunch breaks & solo food cravings.',
                     'featured_deals' => 'Exclusive burger discount deals, combo meal offers.',
@@ -190,7 +190,7 @@ return [
         'common-mistakes-ordering-food-delivery-online' => [
             'slug' => 'common-mistakes-ordering-food-delivery-online',
             'title' => '9 Common Mistakes to Avoid When Ordering Food Delivery Online',
-            'image' => 'new_banners/Banner3.jpg',
+            'image' => 'new_banners/card_banner_3.jpg',
             'excerpt' => 'Missing a quick detail during checkout or choosing the wrong delivery slot can turn an easy meal into a cold, delayed disappointment — here are 9 mistakes to avoid on your next order.',
             'meta_title' => '9 Common Mistakes to Avoid When Ordering Food Delivery Online | GoFeast Blog',
             'meta_description' => 'Missing a quick detail during checkout or choosing the wrong delivery slot can turn an easy meal into a cold, delayed disappointment — here are 9 mistakes to avoid on your next order.',
@@ -261,7 +261,7 @@ return [
         'food-delivery-delay-tips' => [
             'slug' => 'food-delivery-delay-tips',
             'title' => 'What to Do If Your Food Delivery Is Delayed During Peak Hours',
-            'image' => 'GoBlog.jpg',
+            'image' => 'new_banners/card_banner_4.jpg',
             'excerpt' => 'Stuck waiting for late food during lunch or dinner rush? Use these essential food delivery delay tips to track orders, contact riders, and secure refunds.',
             'meta_title' => 'What to Do If Your Food Delivery Is Delayed During Peak Hours',
             'meta_description' => 'Stuck waiting for late food during lunch or dinner rush? Use these essential food delivery delay tips to track orders, contact riders, and secure refunds.',
@@ -325,6 +325,115 @@ return [
                 'heading' => 'Get Your Meal on Time, Even at Rush Hour',
                 'paragraph' => 'Applying these actionable food delivery delay tips will help you navigate order slowdowns smoothly, keep communication clear and get your hot meal to your table with minimal hassle!',
                 'cta_text' => 'Track every order live and chat with your rider directly by downloading the GoFeast app today!',
+            ],
+        ],
+
+        'late-night-fast-food-delivery' => [
+            'slug' => 'late-night-fast-food-delivery',
+            'title' => 'Why Late Night Fast Food Delivery Is More Popular Than Ever',
+            'image' => 'GoBlog.jpg',
+            'excerpt' => 'Craving midnight burgers or late-night pizza? Discover who delivers late night fast food directly to your door fast, fresh, and budget-friendly.',
+            'meta_title' => 'Who Delivers Late Night Fast Food Directly to Your Door?',
+            'meta_description' => 'Craving midnight burgers or late-night pizza? Discover who delivers late night fast food directly to your door fast, fresh, and budget-friendly.',
+            'intro' => [
+                'Nothing hits quite like a late-night craving. Whether you are pulling an all-nighter for work, watching late-night movies, or hanging out with friends, hunger often strikes long after traditional kitchens have closed their doors.',
+                'Finding reliable, fast delivery during midnight hours used to be a hassle. However, modern food delivery networks have transformed midnight dining into a seamless experience. If you are asking who delivers late night fast food directly to your door, here is everything you need to know about getting <a href="https://order.gofeast.io/?from-splash=false&index=0" target="_blank" class="blog-link">hot meals delivered</a> safely, quickly and affordably.',
+            ],
+            'feature_groups' => [
+                [
+                    'heading' => 'Why Midnight Delivery Is Booming',
+                    'intro' => 'Midnight food delivery has grown far beyond a niche service it has become an essential urban convenience.',
+                    'items' => [
+                        [
+                            'icon' => 'uil-clock',
+                            'title' => '24/7 Kitchen Availability',
+                            'description' => 'Top local eateries and fast-food chains now operate extended night shifts or dark kitchens to meet late-night demand.',
+                        ],
+                        [
+                            'icon' => 'uil-bolt',
+                            'title' => 'Shorter Transit Times',
+                            'description' => 'Less traffic during midnight hours allows riders to deliver orders faster than during daytime peak hours.',
+                        ],
+                        [
+                            'icon' => 'uil-wallet',
+                            'title' => 'Instant Digital Payments & COD',
+                            'description' => 'Flexible checkout options make ordering effortless, whether paying via digital wallets or cash.',
+                        ],
+                    ],
+                ],
+                [
+                    'heading' => 'What Fast Food Options Can You Order Late at Night?',
+                    'intro' => 'When ordering food in the middle of the night, fast-food joints and specialty kitchens offer diverse menus tailored for midnight cravings:',
+                    'items' => [
+                        [
+                            'icon' => 'uil-utensils',
+                            'title' => 'Hot Crispy Fried Chicken & Wings',
+                            'description' => 'Perfect for sharing during late-night gatherings.',
+                        ],
+                        [
+                            'icon' => 'uil-pizza-slice',
+                            'title' => 'Cheesy Loaded Pizzas',
+                            'description' => 'A classic choice for late-night study sessions or movie marathons.',
+                        ],
+                        [
+                            'icon' => 'uil-utensils-alt',
+                            'title' => 'Loaded Burgers & Wraps',
+                            'description' => 'Quick, satisfying, and easy to eat on the go.',
+                        ],
+                        [
+                            'icon' => 'uil-glass-martini',
+                            'title' => 'Midnight Snacks & Drinks',
+                            'description' => 'Cold beverages, desserts, and sides to complete your meal.',
+                        ],
+                    ],
+                ],
+                [
+                    'heading' => 'How Real-Time GPS Tracking Protects Your Midnight Order',
+                    'intro' => 'Ordering food late at night <a href="https://www.fooddocs.com/food-safety-templates/restaurant-food-safety-procedures" target="_blank" rel="noopener" class="blog-link">requires trust, safety, and precision</a>. Advanced delivery platforms use real-time GPS tracking so you know exactly where your rider is at every moment.',
+                    'items' => [
+                        [
+                            'icon' => 'uil-location-point',
+                            'title' => 'Live Rider Location',
+                            'description' => 'Watch your rider move from the restaurant to your neighborhood in real time.',
+                        ],
+                        [
+                            'icon' => 'uil-comment-alt-message',
+                            'title' => 'Direct Communication',
+                            'description' => 'In-app messaging allows you to share specific street landmarks or gate instructions easily.',
+                        ],
+                        [
+                            'icon' => 'uil-shield-check',
+                            'title' => 'Safety & Transparency',
+                            'description' => 'Verified rider profiles and transparent tracking ensure a secure delivery process right to your doorstep.',
+                        ],
+                    ],
+                ],
+                [
+                    'heading' => '3 Practical Tips for Ordering Food Late at Night',
+                    'intro' => 'To ensure your midnight fast-food delivery arrives hot, fresh, and without unnecessary delays, keep these quick tips in mind:',
+                    'items' => [
+                        [
+                            'icon' => 'uil-map-pin-alt',
+                            'title' => 'Provide Precise Address Notes',
+                            'description' => 'Late-night navigation can be tricky. Always add clear notes about house numbers, street blocks, or gated complex entrances.',
+                        ],
+                        [
+                            'icon' => 'uil-money-bill',
+                            'title' => 'Have Payment Ready',
+                            'description' => 'If opting for Cash on Delivery, keep exact change ready to speed up the handoff at your door.',
+                        ],
+                        [
+                            'icon' => 'uil-bell',
+                            'title' => 'Keep Notifications On',
+                            'description' => 'Stay alert for rider messages or calls so you can meet them immediately upon arrival.',
+                        ],
+                    ],
+                ],
+            ],
+            'why_matters' => [
+                'heading' => 'Order Late Night Fast Food Fast and Fresh',
+                'paragraph' => 'Stop letting late-night hunger ruin your night. With tech-driven platforms like <a href="https://play.google.com/store/apps/details?id=com.gomeat.app&hl=en" target="_blank" class="blog-link">GoFeast</a>, getting your favorite burgers, crispy fried chicken, and cheesy pizzas delivered straight to your door is faster and easier than ever.',
+                'cta_text' => '<a href="https://play.google.com/store/apps/details?id=com.gomeat.app&hl=en" target="_blank" class="blog-link">Download the GoFeast app</a> today to explore late-night restaurant menus, track your delivery in real time, and enjoy hot food whenever cravings strike!',
             ],
         ],
     ],

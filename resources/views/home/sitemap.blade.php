@@ -33,6 +33,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://gofeast.pk/lucky-draw</loc>
+  <lastmod>2026-10-04T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://gofeast.pk/blog</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.80</priority>

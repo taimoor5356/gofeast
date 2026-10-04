@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('meta_tags')
-<title>{{ $post['title'] }} | GoFeast Blog</title>
+<title>{{ $post['meta_title'] ?? $post['title'] . ' | GoFeast Blog' }}</title>
 <meta name="description" content="{{ $post['meta_description'] ?? $post['excerpt'] }}">
 @endsection
 @section('styles')
@@ -232,7 +232,7 @@
                 <div class="blog-feature-group">
                     <h2>{{ $group['heading'] }}</h2>
                     @if(!empty($group['intro']))
-                    <p class="text-muted mb-0">{{ $group['intro'] }}</p>
+                    <p class="text-muted mb-0">{!! $group['intro'] !!}</p>
                     @endif
                     <div class="blog-feature-grid">
                         @foreach($group['items'] as $item)
