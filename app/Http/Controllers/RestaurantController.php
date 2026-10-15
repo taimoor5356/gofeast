@@ -90,8 +90,15 @@ class RestaurantController extends Controller
         $url = "https://dashboard.gofeast.io/api/v1/get-store-items/".urlencode($prettyName);
         $response = Http::get($url);
         $jsonResponse = $response->json();
-        $restaurant = $jsonResponse['restaurant'];
-        $items = $jsonResponse['items'];
+        $restaurant = $jsonResponse['restaurant'] ?? null;
+
+        // Old/renamed slugs come back as {"error":"Store not found"}; answer
+        // with a real 404 so search engines drop them instead of retrying a 500.
+        if (empty($restaurant)) {
+            abort(404);
+        }
+
+        $items = $jsonResponse['items'] ?? [];
         $currentPage = request()->get('page', 1); // Get the current page number from the request
         $perPage = 500; // Number of items per page
         $itemsCollection = collect($items); // Convert array to collection

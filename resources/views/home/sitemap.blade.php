@@ -188,11 +188,6 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/wakhra-sayapa-menu-bahria-town</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants?page=1</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.51</priority>
@@ -338,16 +333,6 @@
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/wakhra-sayapa-menu-bahria-town?page=2</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/wakhra-sayapa-menu-bahria-town?page=3</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/monaco-bay-bahria-town-lahore</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.41</priority>
@@ -359,11 +344,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/pazookie-bahria-town-lahore</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/taste&amp;health-homemade-food-near-bahria</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.41</priority>
 </url>
@@ -528,11 +508,6 @@
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/wakhra-sayapa-menu-bahria-town?page=1</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/monaco-bay-bahria-town-lahore?page=2</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.33</priority>
@@ -559,16 +534,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/pazookie-bahria-town-lahore?page=3</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/taste&amp;health-homemade-food-near-bahria?page=2</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/taste&amp;health-homemade-food-near-bahria?page=3</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.33</priority>
 </url>
@@ -684,11 +649,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/pazookie-bahria-town-lahore?page=1</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/taste&amp;health-homemade-food-near-bahria?page=1</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.26</priority>
 </url>
