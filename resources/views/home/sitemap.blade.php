@@ -578,11 +578,6 @@
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/gloria-jeans-bahria-town-lahore?page=7</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/maatoo-rice-bahria-town-lahore?page=1</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.33</priority>
@@ -678,11 +673,6 @@
   <priority>0.26</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/karachi-hot-n-spicy-bahria-town-lahore?page=11</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/gloria-jeans-bahria-town-lahore?page=4</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.26</priority>
@@ -709,11 +699,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/karachi-hot-n-spicy-bahria-town-lahore?page=7</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/karachi-hot-n-spicy-bahria-town-lahore?page=9</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.17</priority>
 </url>
