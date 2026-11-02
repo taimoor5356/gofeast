@@ -108,11 +108,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/haji-baba-tikka-shop-bahria-town-lahore</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/hifny-tifny-bahria-town</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.64</priority>
@@ -134,16 +129,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/karachi-hot-n-spicy-bahria-town-lahore</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/pickup?page=2</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/pickup?page=4</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -223,16 +208,6 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/pickup?page=1</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/pickup?page=3</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/gloria-jeans-bahria-town-lahore</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.51</priority>
@@ -274,11 +249,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/malik-spicy-bahria-town-lahore?page=1</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/malik-spicy-bahria-town-lahore?page=3</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.41</priority>
 </url>
@@ -563,11 +533,6 @@
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/karachi-hot-n-spicy-bahria-town-lahore?page=12</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/gloria-jeans-bahria-town-lahore?page=1</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.33</priority>
@@ -613,16 +578,6 @@
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://gofeast.pk/restaurants/malik-spicy-bahria-town-lahore?page=5</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/malik-spicy-bahria-town-lahore?page=6</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
   <loc>https://gofeast.pk/restaurants/monaco-bay-bahria-town-lahore?page=1</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.26</priority>
@@ -649,11 +604,6 @@
 </url>
 <url>
   <loc>https://gofeast.pk/restaurants/snack-attack-ep-1.0-bahria-town-lahore?page=1</loc>
-  <lastmod>2024-10-02T15:01:21+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://gofeast.pk/restaurants/do-chia-bahria-town-lahore?page=1</loc>
   <lastmod>2024-10-02T15:01:21+00:00</lastmod>
   <priority>0.26</priority>
 </url>
