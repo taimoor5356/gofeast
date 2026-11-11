@@ -10,7 +10,11 @@
     @yield('meta_tags')
     <!-- Canonical Tag -->
 
+    @hasSection('canonical')
+    <link rel="canonical" href="@yield('canonical')" />
+    @else
     <link rel="canonical" href="https://www.gofeast.pk/" />
+    @endif
     <style>
         @keyframes fadeInLeft {
             from {

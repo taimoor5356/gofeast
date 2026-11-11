@@ -1,5 +1,35 @@
 @extends('layouts.app')
+@php
+    $restaurantUrl = 'https://www.gofeast.pk/restaurants/' . $restaurant_slug;
+    // e.g. "OLio's Pizzeria & Eatery Restaurant | GoFeast"; avoid "Prime Restaurant Restaurant".
+    $metaTitle = (preg_match('/restaurant$/i', trim($pretty_name)) ? trim($pretty_name) : $pretty_name . ' Restaurant') . ' | GoFeast';
+    $metaDescription = !empty($restaurant['meta_description'])
+        ? $restaurant['meta_description']
+        : 'Check ' . $pretty_name . ' menu and prices in Bahria Town, Lahore. Order online on GoFeast for fast food delivery straight to your home or office!';
+    $metaImage = $restaurant['meta_image_full_url'] ?? $restaurant['cover_photo_full_url'] ?? $restaurant['logo_full_url'] ?? null;
+@endphp
+@section('canonical', $restaurantUrl)
 @section('meta_tags')
+    <title>{{ $metaTitle }}</title>
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $metaTitle }}">
+    <meta property="og:description" content="{{ $metaDescription }}">
+    <meta property="og:url" content="{{ $restaurantUrl }}">
+    @if($metaImage)
+    <meta property="og:image" content="{{ $metaImage }}">
+    @endif
+    <script type="application/ld+json">
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => [
+            ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => 'https://www.gofeast.pk/'],
+            ['@type' => 'ListItem', 'position' => 2, 'name' => 'Restaurants', 'item' => 'https://www.gofeast.pk/restaurants'],
+            ['@type' => 'ListItem', 'position' => 3, 'name' => $pretty_name, 'item' => $restaurantUrl],
+        ],
+    ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+    </script>
     {!! $schema_code !!}
 @endsection
 @section('styles')
@@ -44,9 +74,12 @@
 
 <section class="wrapper px-0" style="background-size: 100% 100%;">
     <div class="container p-0">
-        <p>
-            <a href="{{route('home')}}">Home </a> > <a href="{{route('restaurants')}}">Restaurant</a> > {{$pretty_name}} > Menu
-        </p>
+        <nav aria-label="breadcrumb">
+            <p class="mb-2">
+                <a href="{{route('home')}}">Home</a> › <a href="{{route('restaurants')}}">Restaurants</a> › <span aria-current="page">{{$pretty_name}}</span>
+            </p>
+        </nav>
+        <h1 class="h2 mb-5">{{ $pretty_name }} Menu</h1>
         <div class="container-fluid p-0">
             <div class="row">
                 @foreach($restaurantItems as $item)
